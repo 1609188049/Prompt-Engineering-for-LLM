@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "dataset": "example_dataset.json",
+    "backend": "mock",
+    "target_sentences": 3,
+    "model": "mock-summarizer",
+    "num_articles": 3
+  },
+  "aggregate_scores": {
+    "zero-shot": {
+      "rouge1": 0.6292,
+      "rouge2": 0.3631,
+      "rougeL": 0.6045
+    },
+    "few-shot": {
+      "rouge1": 0.5878,
+      "rouge2": 0.3104,
+      "rougeL": 0.5666
+    },
+    "cot": {
+      "rouge1": 0.5773,
+      "rouge2": 0.3104,
+      "rougeL": 0.4307
+    }
+  },
+  "articles": [
+    {
+      "id": "news-001",
+      "reference_summary": "A coastal city approved a flood prevention plan after storm damage last year. The plan includes sea walls, drainage upgrades, and better emergency communications. Construction will start this summer in vulnerable neighborhoods.",
+      "results": {
+        "zero-shot": {
+          "summary": "A coastal city approved a new flood prevention plan after several severe storms damaged roads and homes last year. The proposal includes stronger sea walls, upgraded drainage systems, and emergency communication improvements. City leaders said construction will begin this summer and focus first on the most vulnerable neighborhoods.",
+          "scores": {
+            "rouge1": 0.6,
+            "rouge2": 0.3333,
+            "rougeL": 0.6
+          }
+        },
+        "few-shot": {
+          "summary": "A coastal city approved a new flood prevention plan after several. The proposal includes stronger sea walls, upgraded drainage systems, and emergency. City leaders said construction will begin this summer and focus first.",
+          "scores": {
+            "rouge1": 0.6154,
+            "rouge2": 0.3175,
+            "rougeL": 0.6154
+          }
+        },
+        "cot": {
+          "summary": "A coastal city approved a new flood prevention plan after several severe storms damaged. City leaders said construction will begin this summer and focus first on the most. The proposal includes stronger sea walls, upgraded drainage systems, and emergency communication improvements.",
+          "scores": {
+            "rouge1": 0.5479,
+            "rouge2": 0.2817,
+            "rougeL": 0.4384
+          }
+        }
+      }
+    },
+    {
+      "id": "news-002",
+      "reference_summary": "A regional hospital introduced telemedicine for rural patients. The service connects specialists with people who previously traveled long distances for care. Leaders expect faster diagnoses and better follow-up access.",
+      "results": {
+        "zero-shot": {
+          "summary": "A regional hospital launched a telemedicine program to expand care for patients in rural counties. Officials said the new service will connect specialists with patients who previously had to drive long distances for appointments. The hospital expects the program to reduce delays in diagnosis and improve access to follow-up care.",
+          "scores": {
+            "rouge1": 0.5185,
+            "rouge2": 0.1772,
+            "rougeL": 0.4444
+          }
+        },
+        "few-shot": {
+          "summary": "A regional hospital launched a telemedicine program to expand care for. Officials said the new service will connect specialists with patients who. The hospital expects the program to reduce delays in diagnosis and.",
+          "scores": {
+            "rouge1": 0.4127,
+            "rouge2": 0.0984,
+            "rougeL": 0.3492
+          }
+        },
+        "cot": {
+          "summary": "A regional hospital launched a telemedicine program to expand care for patients in rural. The hospital expects the program to reduce delays in diagnosis and improve access to. Officials said the new service will connect specialists with patients who previously had to.",
+          "scores": {
+            "rouge1": 0.4444,
+            "rouge2": 0.1143,
+            "rougeL": 0.3333
+          }
+        }
+      }
+    },
+    {
+      "id": "news-003",
+      "reference_summary": "State officials funded after-school science programs in 40 middle schools. The initiative will support robotics, lab supplies, and teacher training. The goal is to boost student interest in STEM through hands-on learning.",
+      "results": {
+        "zero-shot": {
+          "summary": "State education officials announced funding for after-school science programs in 40 middle schools. The initiative will support robotics clubs, lab materials, and teacher training. Administrators said the goal is to increase student interest in STEM subjects and create more hands-on learning opportunities.",
+          "scores": {
+            "rouge1": 0.7692,
+            "rouge2": 0.5789,
+            "rougeL": 0.7692
+          }
+        },
+        "few-shot": {
+          "summary": "State education officials announced funding for after-school science programs in 40. The initiative will support robotics clubs, lab materials, and teacher training. Administrators said the goal is to increase student interest in STEM.",
+          "scores": {
+            "rouge1": 0.7353,
+            "rouge2": 0.5152,
+            "rougeL": 0.7353
+          }
+        },
+        "cot": {
+          "summary": "State education officials announced funding for after-school science programs in 40 middle schools. Administrators said the goal is to increase student interest in STEM subjects and create. The initiative will support robotics clubs, lab materials, and teacher training.",
+          "scores": {
+            "rouge1": 0.7397,
+            "rouge2": 0.5352,
+            "rougeL": 0.5205
+          }
+        }
+      }
+    }
+  ]
+}

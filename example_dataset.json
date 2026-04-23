@@ -1,0 +1,17 @@
+[
+  {
+    "id": "news-001",
+    "article": "A coastal city approved a new flood prevention plan after several severe storms damaged roads and homes last year. The proposal includes stronger sea walls, upgraded drainage systems, and emergency communication improvements. City leaders said construction will begin this summer and focus first on the most vulnerable neighborhoods.",
+    "reference_summary": "A coastal city approved a flood prevention plan after storm damage last year. The plan includes sea walls, drainage upgrades, and better emergency communications. Construction will start this summer in vulnerable neighborhoods."
+  },
+  {
+    "id": "news-002",
+    "article": "A regional hospital launched a telemedicine program to expand care for patients in rural counties. Officials said the new service will connect specialists with patients who previously had to drive long distances for appointments. The hospital expects the program to reduce delays in diagnosis and improve access to follow-up care.",
+    "reference_summary": "A regional hospital introduced telemedicine for rural patients. The service connects specialists with people who previously traveled long distances for care. Leaders expect faster diagnoses and better follow-up access."
+  },
+  {
+    "id": "news-003",
+    "article": "State education officials announced funding for after-school science programs in 40 middle schools. The initiative will support robotics clubs, lab materials, and teacher training. Administrators said the goal is to increase student interest in STEM subjects and create more hands-on learning opportunities.",
+    "reference_summary": "State officials funded after-school science programs in 40 middle schools. The initiative will support robotics, lab supplies, and teacher training. The goal is to boost student interest in STEM through hands-on learning."
+  }
+]
