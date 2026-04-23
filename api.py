@@ -22,7 +22,7 @@ class PromptPreviewRequest(BaseModel):
 
 
 class SummarizeRequest(PromptPreviewRequest):
-    backend: str = Field(default="mock", pattern="^(mock|openai)$")
+    backend: str = Field(default="mock", pattern="^(mock|openai|gemini|deepseek|claude)$")
     model: str = Field(default="gpt-4.1-mini")
 
 
@@ -30,7 +30,7 @@ class EvaluateRequest(BaseModel):
     article: str
     reference_summary: str
     target_sentences: int = Field(default=3, ge=1, le=10)
-    backend: str = Field(default="mock", pattern="^(mock|openai)$")
+    backend: str = Field(default="mock", pattern="^(mock|openai|gemini|deepseek|claude)$")
     model: str = Field(default="gpt-4.1-mini")
 
 

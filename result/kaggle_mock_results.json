@@ -1,0 +1,3028 @@
+{
+  "metadata": {
+    "dataset": "result/kaggle_sample_dataset.json",
+    "backend": "mock",
+    "target_sentences": 3,
+    "model": "mock-summarizer",
+    "num_articles": 100
+  },
+  "aggregate_scores": {
+    "zero-shot": {
+      "rouge1": 0.5502,
+      "rouge2": 0.4813,
+      "rougeL": 0.5216
+    },
+    "few-shot": {
+      "rouge1": 0.4729,
+      "rouge2": 0.3719,
+      "rougeL": 0.4435
+    },
+    "cot": {
+      "rouge1": 0.4231,
+      "rouge2": 0.3176,
+      "rougeL": 0.3819
+    }
+  },
+  "articles": [
+    {
+      "id": "kaggle-603278",
+      "reference_summary": "Australian foreign minister Penny Wong emphasized the importance of Australia's strategic ties with India amid China's military expansion. Wong warned that China's military modernization is unprecedented and lacks transparency. She also highlighted the destab…",
+      "results": {
+        "zero-shot": {
+          "summary": "NEW DELHI: Australian foreign minister Penny Wong on Tuesday said that her country's strategic ties with India are very important for the balance of power in the world amid China's unprecedented military modernisation. Wong, who is in New Delhi for the 2+2 ministerial dialogue, warned that China has been modernising its military at a scale \"never seen before in the world\". \".",
+          "scores": {
+            "rouge1": 0.4752,
+            "rouge2": 0.2424,
+            "rougeL": 0.396
+          }
+        },
+        "few-shot": {
+          "summary": "NEW DELHI: Australian foreign minister Penny Wong on Tuesday said that. Wong, who is in New Delhi for the 2+2 ministerial dialogue. \".",
+          "scores": {
+            "rouge1": 0.3,
+            "rouge2": 0.1379,
+            "rougeL": 0.2667
+          }
+        },
+        "cot": {
+          "summary": "NEW DELHI: Australian foreign minister Penny Wong on Tuesday said that her country's strategic. \"We share an ocean and in that sense, we are neighbours, and there has. Wong, who is in New Delhi for the 2+2 ministerial dialogue, warned that China.",
+          "scores": {
+            "rouge1": 0.3457,
+            "rouge2": 0.1772,
+            "rougeL": 0.2716
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-10625",
+      "reference_summary": "As Cristiano Ronaldo and Neymar pack Saudi stadiums, a quieter but equally dramatic transformation is unfolding for women's professional football, which didn't even exist in the kingdom five years ago.",
+      "results": {
+        "zero-shot": {
+          "summary": "As Cristiano Ronaldo and Neymar pack Saudi stadiums, a quieter but equally dramatic transformation is unfolding for women's professional football, which didn't even exist in the kingdom five years ago. On a recent evening in the mountain city of Taif, the Saudi women's national team ran through a one-touch passing drill ahead of a game against Pakistan, the latest in a series of friendlies intended to give the players some much-needed match experience. The squad only formed two years ago and entered the FIFA rankings in March, at 171st place.",
+          "scores": {
+            "rouge1": 0.5039,
+            "rouge2": 0.496,
+            "rougeL": 0.5039
+          }
+        },
+        "few-shot": {
+          "summary": "As Cristiano Ronaldo and Neymar pack Saudi stadiums, a quieter but. On a recent evening in the mountain city of Taif, the. The squad only formed two years ago and entered the FIFA.",
+          "scores": {
+            "rouge1": 0.4615,
+            "rouge2": 0.381,
+            "rougeL": 0.4615
+          }
+        },
+        "cot": {
+          "summary": "As Cristiano Ronaldo and Neymar pack Saudi stadiums, a quieter but equally dramatic transformation. \"I'm only interested in women's football because I want women's football to grow, I. On a recent evening in the mountain city of Taif, the Saudi women's national.",
+          "scores": {
+            "rouge1": 0.4872,
+            "rouge2": 0.3947,
+            "rougeL": 0.4872
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-111147",
+      "reference_summary": "Bhutan's King Jigme Khesar Namgyel Wangchuck is set to embark on an official visit to India. During this week-long visit, he will meet with Prime Minister Narendra Modi in New Delhi and travel to the states of Assam and Maharashtra. This visit is of significa…",
+      "results": {
+        "zero-shot": {
+          "summary": "IANS Bhutan's King Jigme Khesar Namgyel Wangchuck will embark on a week-long visit to India from Friday. Bhutan King Jigme Khesar Namgyel Wangchuck will arrive on an official visit to India on Friday. His visit, which will last a week, will be his second trip to India this year signifying decades-old special relationship.",
+          "scores": {
+            "rouge1": 0.4272,
+            "rouge2": 0.2772,
+            "rougeL": 0.3495
+          }
+        },
+        "few-shot": {
+          "summary": "IANS Bhutan's King Jigme Khesar Namgyel Wangchuck will embark on a. Bhutan King Jigme Khesar Namgyel Wangchuck will arrive on an official. His visit, which will last a week, will be his second.",
+          "scores": {
+            "rouge1": 0.3457,
+            "rouge2": 0.2278,
+            "rougeL": 0.3457
+          }
+        },
+        "cot": {
+          "summary": "IANS Bhutan's King Jigme Khesar Namgyel Wangchuck will embark on a week-long visit to. Are unsecured loans vaulting to a contagion of defaults? ‘Jimny is not for volumes’. Bhutan King Jigme Khesar Namgyel Wangchuck will arrive on an official visit to India.",
+          "scores": {
+            "rouge1": 0.4835,
+            "rouge2": 0.3146,
+            "rougeL": 0.3297
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-42344",
+      "reference_summary": "Streaming giants across the industry are charging more. Apple follows Netflix and Disney in hiking its price.",
+      "results": {
+        "zero-shot": {
+          "summary": "Your Apple TV+ subscription is going up — again. Apple is raising the price of a monthly subscription to itsstreaming platformApple TV+, the home of \"Ted Lasso\" and \"The Morning Show. A monthly subscription will now cost $9.",
+          "scores": {
+            "rouge1": 0.1481,
+            "rouge2": 0.0,
+            "rougeL": 0.0741
+          }
+        },
+        "few-shot": {
+          "summary": "Your Apple TV+ subscription is going up — again. Apple is raising the price of a monthly subscription to itsstreaming. A monthly subscription will now cost $9.",
+          "scores": {
+            "rouge1": 0.1395,
+            "rouge2": 0.0,
+            "rougeL": 0.093
+          }
+        },
+        "cot": {
+          "summary": "Your Apple TV+ subscription is going up — again. 99. Apple is raising the price of a monthly subscription to itsstreaming platformApple TV+, the.",
+          "scores": {
+            "rouge1": 0.15,
+            "rouge2": 0.0,
+            "rougeL": 0.1
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-527810",
+      "reference_summary": "Exchange Income (TSE:EIF – Free Report) had its target price decreased by Royal Bank of Canada from C$70.00 to C$65.00 in a research report released on Thursday morning, BayStreet.CA reports. Royal Bank of Canada currently has an outperform rating on the stoc…",
+      "results": {
+        "zero-shot": {
+          "summary": "Exchange Income (TSE:EIF–Free Report)had its target price decreased by Royal Bank of Canada from C$70. 00 to C$65. 00 in a research report released on Thursday morning,BayStreet.",
+          "scores": {
+            "rouge1": 0.825,
+            "rouge2": 0.8205,
+            "rougeL": 0.825
+          }
+        },
+        "few-shot": {
+          "summary": "Exchange Income (TSE:EIF–Free Report)had its target price decreased by Royal Bank. 00 to C$65. 00 in a research report released on Thursday morning,BayStreet.",
+          "scores": {
+            "rouge1": 0.7467,
+            "rouge2": 0.7123,
+            "rougeL": 0.7467
+          }
+        },
+        "cot": {
+          "summary": "Exchange Income (TSE:EIF–Free Report)had its target price decreased by Royal Bank of Canada from. The Aerospace & Aviation segment offers scheduled airline, cargo, charter, and emergency medical services. 00 to C$65.",
+          "scores": {
+            "rouge1": 0.5432,
+            "rouge2": 0.481,
+            "rougeL": 0.5185
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-395142",
+      "reference_summary": "The Reserve Bank on Thursday tightened norms for unsecured personal loans for banks and non-banking financial companies.The revised norms wherein risk weights have been increased by 25 percentage points will not be applicable on certain consumer loans, includ…",
+      "results": {
+        "zero-shot": {
+          "summary": "MUMBAI: The Reserve Bank on Thursday tightened norms for unsecured personal loans for banks and non-banking financial companies. The revised norms wherein risk weights have been increased by 25 percentage points will not be applicable on certain consumer loans, including housing, education, and vehicle loans. Besides, the norms will not be applicable on loans secured by gold and gold jewellery.",
+          "scores": {
+            "rouge1": 0.7723,
+            "rouge2": 0.7677,
+            "rougeL": 0.7723
+          }
+        },
+        "few-shot": {
+          "summary": "MUMBAI: The Reserve Bank on Thursday tightened norms for unsecured personal. The revised norms wherein risk weights have been increased by 25. Besides, the norms will not be applicable on loans secured by.",
+          "scores": {
+            "rouge1": 0.7397,
+            "rouge2": 0.6479,
+            "rougeL": 0.7397
+          }
+        },
+        "cot": {
+          "summary": "MUMBAI: The Reserve Bank on Thursday tightened norms for unsecured personal loans for banks. The central bank has also increased the risk weights on credit receivables by 25. The revised norms wherein risk weights have been increased by 25 percentage points will.",
+          "scores": {
+            "rouge1": 0.6829,
+            "rouge2": 0.625,
+            "rougeL": 0.6585
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-195285",
+      "reference_summary": "António Costa asserted his innocence but said he must resign amid an investigation implicating members of his government.",
+      "results": {
+        "zero-shot": {
+          "summary": "Portuguese Prime Minister António Costa gestures during a news conference in Lisbon, Portugal, Tuesday. Costa says he is resigning after being involved in a widespread corruption probe. An investigative judge issued arrest warrants for Costa's chief of staff, the mayor of Sines and three other people.",
+          "scores": {
+            "rouge1": 0.1538,
+            "rouge2": 0.0317,
+            "rougeL": 0.1538
+          }
+        },
+        "few-shot": {
+          "summary": "Portuguese Prime Minister António Costa gestures during a news conference in. Costa says he is resigning after being involved in a widespread. An investigative judge issued arrest warrants for Costa's chief of staff.",
+          "scores": {
+            "rouge1": 0.1923,
+            "rouge2": 0.04,
+            "rougeL": 0.1923
+          }
+        },
+        "cot": {
+          "summary": "Portuguese Prime Minister António Costa gestures during a news conference in Lisbon, Portugal, Tuesday. Wilson reported and Renata Brito contributed from Barcelona, Spain. Costa says he is resigning after being involved in a widespread corruption probe.",
+          "scores": {
+            "rouge1": 0.1111,
+            "rouge2": 0.0385,
+            "rougeL": 0.1111
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-20129",
+      "reference_summary": "All Quest 2 games run better on Quest 3 by default, but some developers are adding new textures, optimizations, and mixed-reality modes.",
+      "results": {
+        "zero-shot": {
+          "summary": "All Oculus Quest 2 games are forward-compatible with the Meta Quest 3, with the faster Snapdragon XR2 Gen 2 and extra RAM giving you 100% faster loading times and 30% higher resolution by default. For other upgrades, such as adding new textures, game assets, dynamic shadows and lighting, and mixed-reality elements, developers need to update their games to take advantage of the Quest 3's upgrades. Thus far, we've seen a couple dozen Quest 2 games with new Quest 3 game updates, but we can expect many more to come.",
+          "scores": {
+            "rouge1": 0.2931,
+            "rouge2": 0.1404,
+            "rougeL": 0.2414
+          }
+        },
+        "few-shot": {
+          "summary": "All Oculus Quest 2 games are forward-compatible with the Meta Quest. For other upgrades, such as adding new textures, game assets, dynamic. Thus far, we've seen a couple dozen Quest 2 games with.",
+          "scores": {
+            "rouge1": 0.3103,
+            "rouge2": 0.1429,
+            "rougeL": 0.2759
+          }
+        },
+        "cot": {
+          "summary": "All Oculus Quest 2 games are forward-compatible with the Meta Quest 3, with the. It's built to immerse you in VR worlds better than ever, as well as. For other upgrades, such as adding new textures, game assets, dynamic shadows and lighting.",
+          "scores": {
+            "rouge1": 0.3582,
+            "rouge2": 0.1538,
+            "rougeL": 0.2985
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-369390",
+      "reference_summary": "The Israeli military said its forces were carrying out an operation on Wednesday against Hamas within Gaza's biggest hospital, Al Shifa.",
+      "results": {
+        "zero-shot": {
+          "summary": "Agencies Oil prices rose in early Asian trade on Wednesday on Middle East tensions and a weaker dollar, while investors focused on inventory data after a two week delay in reporting. Brent futures rose 8 cents to $82. 55 a barrel by 0013 GMT, while U.",
+          "scores": {
+            "rouge1": 0.0588,
+            "rouge2": 0.0303,
+            "rougeL": 0.0588
+          }
+        },
+        "few-shot": {
+          "summary": "Agencies Oil prices rose in early Asian trade on Wednesday on. Brent futures rose 8 cents to $82. 55 a barrel by 0013 GMT, while U.",
+          "scores": {
+            "rouge1": 0.0833,
+            "rouge2": 0.0435,
+            "rougeL": 0.0833
+          }
+        },
+        "cot": {
+          "summary": "Agencies Oil prices rose in early Asian trade on Wednesday on Middle East tensions. 87% dividend yields and continuous dividend payments for 7 years 7 mins read Weekly. Brent futures rose 8 cents to $82.",
+          "scores": {
+            "rouge1": 0.0702,
+            "rouge2": 0.0364,
+            "rougeL": 0.0702
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-514260",
+      "reference_summary": "Wallace & Gromit creator Aardman has denied that it has had a close shave with its clay stock. On Monday afternoon, the iconic British animation studio issued a statement denying that it is running out of materials to make future projects. It follows The Dail…",
+      "results": {
+        "zero-shot": {
+          "summary": "Wallace & GromitcreatorAardmanhas denied that it has had a close shave with its clay stock. On Monday afternoon, the iconic British animation studio issued a statement denying that it is running out of materials to make future projects. It followsThe Daily Telegraphreporting that Aardman only had enough modeling clay for one moreWallace & Gromitfilm after its main supplier, Newclay Products, shut up shop in March.",
+          "scores": {
+            "rouge1": 0.7103,
+            "rouge2": 0.6667,
+            "rougeL": 0.6916
+          }
+        },
+        "few-shot": {
+          "summary": "Wallace & GromitcreatorAardmanhas denied that it has had a close shave. On Monday afternoon, the iconic British animation studio issued a statement. It followsThe Daily Telegraphreporting that Aardman only had enough modeling clay.",
+          "scores": {
+            "rouge1": 0.6316,
+            "rouge2": 0.4595,
+            "rougeL": 0.5526
+          }
+        },
+        "cot": {
+          "summary": "Wallace & GromitcreatorAardmanhas denied that it has had a close shave with its clay. Aardman’s other creations includeShaun the SheepandMorph. On Monday afternoon, the iconic British animation studio issued a statement denying that it.",
+          "scores": {
+            "rouge1": 0.7179,
+            "rouge2": 0.6053,
+            "rougeL": 0.6667
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-24710",
+      "reference_summary": "The State Department announced that over 24 million U.S. passports and cards have been issued in the past 12 months, a record high.",
+      "results": {
+        "zero-shot": {
+          "summary": "U. S. passportbooks and cards hit an all-time record high with more than 24 million issued over the last 12 months, the State DepartmentannouncedMonday.",
+          "scores": {
+            "rouge1": 0.6122,
+            "rouge2": 0.2553,
+            "rougeL": 0.3265
+          }
+        },
+        "few-shot": {
+          "summary": "U. S. passportbooks and cards hit an all-time record high with more than.",
+          "scores": {
+            "rouge1": 0.3158,
+            "rouge2": 0.1667,
+            "rougeL": 0.3158
+          }
+        },
+        "cot": {
+          "summary": "U. ABC News' Shannon Crawford contributed to this report. S.",
+          "scores": {
+            "rouge1": 0.1176,
+            "rouge2": 0.0,
+            "rougeL": 0.1176
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-232722",
+      "reference_summary": "The S&P 500 index has had a decent run this year, gaining 14.2% year-to-date. Despite the overall gains, the index has undergone periods of volatility due to the uncertain macroeconomic and geopolitical environment, as is evident from the index’s 1.9% decline…",
+      "results": {
+        "zero-shot": {
+          "summary": "The S&P 500 index has had a decent run this year, gaining 14. 2% year-to-date. Despite the overall gains, the index has undergone periods of volatility due to the uncertain macroeconomic and geopolitical environment, as is evident from the index’s 1.",
+          "scores": {
+            "rouge1": 0.9783,
+            "rouge2": 0.9778,
+            "rougeL": 0.9783
+          }
+        },
+        "few-shot": {
+          "summary": "The S&P 500 index has had a decent run this year. 2% year-to-date. Despite the overall gains, the index has undergone periods of volatility.",
+          "scores": {
+            "rouge1": 0.7297,
+            "rouge2": 0.6944,
+            "rougeL": 0.7297
+          }
+        },
+        "cot": {
+          "summary": "The S&P 500 index has had a decent run this year, gaining 14. com. 2% year-to-date.",
+          "scores": {
+            "rouge1": 0.5455,
+            "rouge2": 0.5,
+            "rougeL": 0.5455
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-65577",
+      "reference_summary": "Protesters march in support of Palestinians in cities around the world calling for an end to Israeli bombing of Gaza.",
+      "results": {
+        "zero-shot": {
+          "summary": "In Pictures Thousands of pro-Palestinian protesters gathered in the US capital on Saturday, marching past the White House to chants of “Free Palestine” as the death toll continued to climb in the conflict between Israel and Hamas. Across the country, Americans have held pro-Palestinian protests with crowds gathering in Los Angeles, New York and Dearborn, Michigan – home to one of the largest populations of Arabs and Arab diaspora in the United States. In the United Kingdom, rallies took place in Manchester in northern England, Edinburgh and Glasgow in Scotland, and London, amid police warnings that anyone showing support for the armed group Hamas could face arrest.",
+          "scores": {
+            "rouge1": 0.1406,
+            "rouge2": 0.0,
+            "rougeL": 0.1094
+          }
+        },
+        "few-shot": {
+          "summary": "In Pictures Thousands of pro-Palestinian protesters gathered in the US capital. Across the country, Americans have held pro-Palestinian protests with crowds gathering. In the United Kingdom, rallies took place in Manchester in northern.",
+          "scores": {
+            "rouge1": 0.1818,
+            "rouge2": 0.0,
+            "rougeL": 0.1455
+          }
+        },
+        "cot": {
+          "summary": "In Pictures Thousands of pro-Palestinian protesters gathered in the US capital on Saturday, marching. Follow Al Jazeera English. Across the country, Americans have held pro-Palestinian protests with crowds gathering in Los Angeles.",
+          "scores": {
+            "rouge1": 0.1852,
+            "rouge2": 0.0,
+            "rougeL": 0.1481
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-397826",
+      "reference_summary": "QUALCOMM Incorporated (NASDAQ:QCOM – Get Free Report) insider James J. Cathey sold 1,000 shares of the business’s stock in a transaction that occurred on Monday, November 13th. The shares were sold at an average price of $124.00, for a total transaction of $1…",
+      "results": {
+        "zero-shot": {
+          "summary": "QUALCOMM Incorporated (NASDAQ:QCOM–Get Free Report) insider James J. Cathey sold 1,000 shares of the business’s stock in a transaction that occurred on Monday, November 13th. The shares were sold at an average price of $124.",
+          "scores": {
+            "rouge1": 0.9176,
+            "rouge2": 0.9157,
+            "rougeL": 0.9176
+          }
+        },
+        "few-shot": {
+          "summary": "QUALCOMM Incorporated (NASDAQ:QCOM–Get Free Report) insider James J. Cathey sold 1,000 shares of the business’s stock in a transaction. The shares were sold at an average price of $124.",
+          "scores": {
+            "rouge1": 0.8354,
+            "rouge2": 0.8052,
+            "rougeL": 0.8354
+          }
+        },
+        "cot": {
+          "summary": "QUALCOMM Incorporated (NASDAQ:QCOM–Get Free Report) insider James J. The QCT segment develops and supplies integrated circuits and system software based on 3G/4G/5G. Cathey sold 1,000 shares of the business’s stock in a transaction that occurred on.",
+          "scores": {
+            "rouge1": 0.6136,
+            "rouge2": 0.5581,
+            "rougeL": 0.5909
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-173931",
+      "reference_summary": "Vistara, the joint venture between Tata group and Singapore Airlines, has announced a three-day sale on domestic flights for the upcoming festive season. The sale offers discounted fares for all three cabin classes - Economy, Premium Economy, and Business Cla…",
+      "results": {
+        "zero-shot": {
+          "summary": "MUMBAI: Tata group and Singapore Airlines joint venture airline Vistara on Tuesday announced a three-day sale across its domestic network for travellers to plan their upcoming journeys during the festive season. \"Domestic bookings as part of this sale are open for a period of 72 hours, starting at 00:01 hours on 7 November 2023 until 23:59 hours on 9 November 2023. The offer is valid for travel from 7 November 2023 to 10 April 2024 (blackout dates apply),\" said the airline.",
+          "scores": {
+            "rouge1": 0.3871,
+            "rouge2": 0.1639,
+            "rougeL": 0.2742
+          }
+        },
+        "few-shot": {
+          "summary": "MUMBAI: Tata group and Singapore Airlines joint venture airline Vistara on. \"Domestic bookings as part of this sale are open for a. The offer is valid for travel from 7 November 2023 to.",
+          "scores": {
+            "rouge1": 0.411,
+            "rouge2": 0.169,
+            "rougeL": 0.274
+          }
+        },
+        "cot": {
+          "summary": "MUMBAI: Tata group and Singapore Airlines joint venture airline Vistara on Tuesday announced a. The seats on sale are limited and available on a first-come, first-served basis. \"Domestic bookings as part of this sale are open for a period of 72.",
+          "scores": {
+            "rouge1": 0.4096,
+            "rouge2": 0.1481,
+            "rougeL": 0.2892
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-84980",
+      "reference_summary": "Pakistan was banned by FIFA in April 2021 for 15 months because of \"undue third party interference\" in its second ban in four years. Pakistan will be joined in the second stage by nine other teams after two-leg, home-and-away series for the Asian Football Con…",
+      "results": {
+        "zero-shot": {
+          "summary": "TOI. in Pakistan's national soccer team won a World Cup qualifying game for the first time on Tuesday, beating Cambodia 1-0 in Islamabad to advance to the second round. After the first leg in Phnom Penh finished 0-0, a half-volley from Harun Hamid was enough to secure victory at Jinnah Sports Stadium in a first home game for Pakistan since 2015.",
+          "scores": {
+            "rouge1": 0.2655,
+            "rouge2": 0.036,
+            "rougeL": 0.1593
+          }
+        },
+        "few-shot": {
+          "summary": "TOI. in Pakistan's national soccer team won a World Cup qualifying game. After the first leg in Phnom Penh finished 0-0, a half-volley.",
+          "scores": {
+            "rouge1": 0.1622,
+            "rouge2": 0.0,
+            "rougeL": 0.1081
+          }
+        },
+        "cot": {
+          "summary": "TOI. Are unsecured loans vaulting to a contagion of defaults? ‘Jimny is not for volumes’. in Pakistan's national soccer team won a World Cup qualifying game for the first.",
+          "scores": {
+            "rouge1": 0.1538,
+            "rouge2": 0.0263,
+            "rougeL": 0.1282
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-450372",
+      "reference_summary": "Estonia has brought anti-tank obstacles to its border, claiming the concrete pyramids were needed to stop illegal migrants Read Full Article at RT.com",
+      "results": {
+        "zero-shot": {
+          "summary": "Estonian authorities have brought apparent“dragon teeth”-style anti-tank obstacles to the river bridge crossing in the town of Narva, located immediately across the border from Russia’s town of Ivangorod. The obstacles were delivered by a military truck and unloaded onto the bridge, footage circulating online shows. Tallinn is prepared to reinforce – or even fully close – its border crossings with Moscow, multiple senior officials have said.",
+          "scores": {
+            "rouge1": 0.2151,
+            "rouge2": 0.0879,
+            "rougeL": 0.1935
+          }
+        },
+        "few-shot": {
+          "summary": "Estonian authorities have brought apparent“dragon teeth”-style anti-tank obstacles to the river. The obstacles were delivered by a military truck and unloaded onto. Tallinn is prepared to reinforce – or even fully close –.",
+          "scores": {
+            "rouge1": 0.2712,
+            "rouge2": 0.1053,
+            "rougeL": 0.2712
+          }
+        },
+        "cot": {
+          "summary": "Estonian authorities have brought apparent“dragon teeth”-style anti-tank obstacles to the river bridge crossing in. The move was condemned by Moscow as a“negative development,”with Foreign Ministry spokeswoman Maria Zakharova. The obstacles were delivered by a military truck and unloaded onto the bridge, footage.",
+          "scores": {
+            "rouge1": 0.1944,
+            "rouge2": 0.0857,
+            "rougeL": 0.1944
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-140390",
+      "reference_summary": "New York State Common Retirement Fund decreased its holdings in shares of Cognizant Technology Solutions Co. (NASDAQ:CTSH – Free Report) by 21.4% in the 2nd quarter, according to the company in its most recent disclosure with the Securities and Exchange Commi…",
+      "results": {
+        "zero-shot": {
+          "summary": "New York State Common Retirement Fund decreased its holdings in shares of Cognizant Technology Solutions Co. (NASDAQ:CTSH–Free Report) by 21. 4% in the 2nd quarter, according to the company in its most recent disclosure with the Securities and Exchange Commission (SEC).",
+          "scores": {
+            "rouge1": 0.9647,
+            "rouge2": 0.9639,
+            "rougeL": 0.9647
+          }
+        },
+        "few-shot": {
+          "summary": "New York State Common Retirement Fund decreased its holdings in shares. (NASDAQ:CTSH–Free Report) by 21. 4% in the 2nd quarter, according to the company in its.",
+          "scores": {
+            "rouge1": 0.8,
+            "rouge2": 0.7647,
+            "rougeL": 0.8
+          }
+        },
+        "cot": {
+          "summary": "New York State Common Retirement Fund decreased its holdings in shares of Cognizant Technology. It operates through four segments: Financial Services; Health Sciences; Products and Resources; and Communications. (NASDAQ:CTSH–Free Report) by 21.",
+          "scores": {
+            "rouge1": 0.5526,
+            "rouge2": 0.4865,
+            "rougeL": 0.5263
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-472785",
+      "reference_summary": "Nortech Systems (NASDAQ:NSYS – Get Free Report) and Ostin Technology Group (NASDAQ:OST – Get Free Report) are both small-cap computer and technology companies, but which is the better business? We will contrast the two companies based on the strength of their…",
+      "results": {
+        "zero-shot": {
+          "summary": "Nortech Systems (NASDAQ:NSYS–Get Free Report) and Ostin Technology Group (NASDAQ:OST–Get Free Report) are both small-cap computer and technology companies, but which is the better business? We will contrast the two companies based on the strength of their risk, institutional ownership, earnings, dividends, valuation, analyst recommendations and profitability. 3. 5% of Nortech Systems shares are owned by institutional investors.",
+          "scores": {
+            "rouge1": 0.8,
+            "rouge2": 0.7961,
+            "rougeL": 0.8
+          }
+        },
+        "few-shot": {
+          "summary": "Nortech Systems (NASDAQ:NSYS–Get Free Report) and Ostin Technology Group (NASDAQ:OST–Get Free. 3. 5% of Nortech Systems shares are owned by institutional investors.",
+          "scores": {
+            "rouge1": 0.5,
+            "rouge2": 0.4242,
+            "rougeL": 0.4706
+          }
+        },
+        "cot": {
+          "summary": "Nortech Systems (NASDAQ:NSYS–Get Free Report) and Ostin Technology Group (NASDAQ:OST–Get Free Report) are both. was founded in 2010 and is based in Nanjing, China. 3.",
+          "scores": {
+            "rouge1": 0.5915,
+            "rouge2": 0.4928,
+            "rougeL": 0.5915
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-85580",
+      "reference_summary": "ABIDJAN : African champions Senegal have been drawn with Cameroon at next year's Africa Cup of Nations finals while record winners Egypt will have old foe Ghana in their group at the tournament to be hosted in the Ivory Coast.The host nation was grouped toget…",
+      "results": {
+        "zero-shot": {
+          "summary": "ABIDJAN: African champions Senegal have been drawn with Cameroon at next year's Africa Cup of Nations finals while record winners Egypt will have old foe Ghana in their group at the tournament to be hosted in the Ivory Coast. The host nation was grouped together with Nigeria while World Cup semi-finalists Morocco look to have a comfortable path to the knockout stages. Senegal will play in Group C with Cameroon, Guinea and Gambia, who were surprise quarter-finalists when they made their Cup of Nations debut at the last edition.",
+          "scores": {
+            "rouge1": 0.6522,
+            "rouge2": 0.6471,
+            "rougeL": 0.6522
+          }
+        },
+        "few-shot": {
+          "summary": "ABIDJAN: African champions Senegal have been drawn with Cameroon at next. The host nation was grouped together with Nigeria while World Cup. Senegal will play in Group C with Cameroon, Guinea and Gambia.",
+          "scores": {
+            "rouge1": 0.5316,
+            "rouge2": 0.3636,
+            "rougeL": 0.4051
+          }
+        },
+        "cot": {
+          "summary": "ABIDJAN: African champions Senegal have been drawn with Cameroon at next year's Africa Cup. Draw: Group A: Ivory Coast, Nigeria, Equatorial Guinea, Guinea Bissau Group B: Egypt, Ghana. The host nation was grouped together with Nigeria while World Cup semi-finalists Morocco look.",
+          "scores": {
+            "rouge1": 0.5778,
+            "rouge2": 0.4318,
+            "rougeL": 0.5111
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-209336",
+      "reference_summary": "Modera Wealth Management LLC reduced its position in shares of Vanguard Global ex-U.S. Real Estate ETF (NASDAQ:VNQI – Free Report) by 2.1% during the second quarter, HoldingsChannel reports. The firm owned 20,460 shares of the company’s stock after selling 43…",
+      "results": {
+        "zero-shot": {
+          "summary": "Modera Wealth Management LLC reduced its position in shares of Vanguard Global ex-U. S. Real Estate ETF (NASDAQ:VNQI–Free Report) by 2.",
+          "scores": {
+            "rouge1": 0.6957,
+            "rouge2": 0.6866,
+            "rougeL": 0.6957
+          }
+        },
+        "few-shot": {
+          "summary": "Modera Wealth Management LLC reduced its position in shares of Vanguard. S. Real Estate ETF (NASDAQ:VNQI–Free Report) by 2.",
+          "scores": {
+            "rouge1": 0.6364,
+            "rouge2": 0.5938,
+            "rougeL": 0.6364
+          }
+        },
+        "cot": {
+          "summary": "Modera Wealth Management LLC reduced its position in shares of Vanguard Global ex-U. Real Estate ETF (NASDAQ:VNQI–Free Report). S.",
+          "scores": {
+            "rouge1": 0.6567,
+            "rouge2": 0.5846,
+            "rougeL": 0.6567
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-206742",
+      "reference_summary": "Shubman Gill's alleged girlfriend, Sara Tendulkar stunned in a beautiful ethnic avatar at the fashion showcase which was a tribute to elephants. Rewild’23 intertwined fashion with a crucial call to preserve our planet’s extraordinary wildlife and pristine hab…",
+      "results": {
+        "zero-shot": {
+          "summary": "Talk of the town, Sara Tendulkar stunned at ace designer Anita Dongre's fashion showcase held in Jaipur recently. Set against the iconic City Palace in her home city and eternal muse Jaipur, Anita Dongre presented her craft-led couture show, Rewild’23 to help raise funds and awareness towards nature and elephant conservation. Sara, who's in news these days for reportedly dating Indian cricketer Shubman Gill, stunned in a black and maroon sheer lehenga designed by none other than Anita Dongre.",
+          "scores": {
+            "rouge1": 0.2742,
+            "rouge2": 0.1148,
+            "rougeL": 0.1774
+          }
+        },
+        "few-shot": {
+          "summary": "Talk of the town, Sara Tendulkar stunned at ace designer Anita. Set against the iconic City Palace in her home city and. Sara, who's in news these days for reportedly dating Indian cricketer.",
+          "scores": {
+            "rouge1": 0.2133,
+            "rouge2": 0.0548,
+            "rougeL": 0.16
+          }
+        },
+        "cot": {
+          "summary": "Talk of the town, Sara Tendulkar stunned at ace designer Anita Dongre's fashion showcase. Also spotted at the show were Madhuri Dixit, Kajal Aggarwal, Bhumi Pednekar, Manushi Chillar. Set against the iconic City Palace in her home city and eternal muse Jaipur.",
+          "scores": {
+            "rouge1": 0.2381,
+            "rouge2": 0.0976,
+            "rougeL": 0.1667
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-436890",
+      "reference_summary": "Public Employees Retirement Association of Colorado lowered its position in shares of Super Micro Computer, Inc. (NASDAQ:SMCI – Free Report) by 18.4% in the second quarter, according to the company in its most recent filing with the SEC. The firm owned 6,718 …",
+      "results": {
+        "zero-shot": {
+          "summary": "Public Employees Retirement Association of Colorado lowered its position in shares of Super Micro Computer, Inc. (NASDAQ:SMCI–Free Report) by 18. 4% in the second quarter, according to the company in its most recent filing with the SEC.",
+          "scores": {
+            "rouge1": 0.9398,
+            "rouge2": 0.9383,
+            "rougeL": 0.9398
+          }
+        },
+        "few-shot": {
+          "summary": "Public Employees Retirement Association of Colorado lowered its position in shares. (NASDAQ:SMCI–Free Report) by 18. 4% in the second quarter, according to the company in its.",
+          "scores": {
+            "rouge1": 0.7778,
+            "rouge2": 0.7429,
+            "rougeL": 0.7778
+          }
+        },
+        "cot": {
+          "summary": "Public Employees Retirement Association of Colorado lowered its position in shares of Super Micro. Its solutions range from complete server, storage systems, modular blade servers, blades, workstations, full. (NASDAQ:SMCI–Free Report) by 18.",
+          "scores": {
+            "rouge1": 0.5385,
+            "rouge2": 0.4737,
+            "rougeL": 0.5128
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-365424",
+      "reference_summary": "Long-serving RTL exec Stephan Schmitter has landed the big seat in Germany. He has been named CEO of RTL Deutschland, effective January 1, 2024. Schmitter is currently Chief Content Officer, a role he will retain in his new post, which hands him responsibilit…",
+      "results": {
+        "zero-shot": {
+          "summary": "Long-servingRTLexec Stephan Schmitter has landed the big seat in Germany. He has been named CEO of RTL Deutschland, effective January 1, 2024. Schmitter is currently Chief Content Officer, a role he will retain in his new post, which hands him responsibility for the RTL+ streaming service and restructured publishing unit Gruner and Jahr.",
+          "scores": {
+            "rouge1": 0.8367,
+            "rouge2": 0.7917,
+            "rougeL": 0.8163
+          }
+        },
+        "few-shot": {
+          "summary": "Long-servingRTLexec Stephan Schmitter has landed the big seat in Germany. He has been named CEO of RTL Deutschland, effective January 1. Schmitter is currently Chief Content Officer, a role he will retain.",
+          "scores": {
+            "rouge1": 0.8312,
+            "rouge2": 0.7733,
+            "rougeL": 0.8312
+          }
+        },
+        "cot": {
+          "summary": "Long-servingRTLexec Stephan Schmitter has landed the big seat in Germany. 1, yesterdaypostedQ3 numbers that appear to show the ad market finally showing signs of. He has been named CEO of RTL Deutschland, effective January 1, 2024.",
+          "scores": {
+            "rouge1": 0.5432,
+            "rouge2": 0.481,
+            "rougeL": 0.5432
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-29317",
+      "reference_summary": "Casey Bloys, Chairman and CEO of \"HBO and Max Content,\" marshalls an army of secret sockpuppet accounts on Twitter to attack television critics with. The surprisingly pathetic, time-wasting behavior is revealed in an exposé by Cheyenne Roundtree just publishe…",
+      "results": {
+        "zero-shot": {
+          "summary": "Casey Bloys, Chairman and CEO of \"HBO and Max Content,\"marshalls an army of secret sockpuppet accounts on Twitter to attack television critics with. The surprisingly pathetic, time-wasting behavior is revealed in an exposé by Cheyenne Roundtree just published byRolling Stone. \"Dear prestige TV,\" [VultureTV critic Kathryn VanArendonk] wrote, \"Please find some way to communicate male trauma besides showing me a flashback to the hero's memories of trench warfare.",
+          "scores": {
+            "rouge1": 0.7027,
+            "rouge2": 0.6972,
+            "rougeL": 0.7027
+          }
+        },
+        "few-shot": {
+          "summary": "Casey Bloys, Chairman and CEO of \"HBO and Max Content,\"marshalls an. The surprisingly pathetic, time-wasting behavior is revealed in an exposé by. \"Dear prestige TV,\" [VultureTV critic Kathryn VanArendonk] wrote, \"Please find some.",
+          "scores": {
+            "rouge1": 0.64,
+            "rouge2": 0.6027,
+            "rougeL": 0.64
+          }
+        },
+        "cot": {
+          "summary": "Casey Bloys, Chairman and CEO of \"HBO and Max Content,\"marshalls an army of secret. None of these could ever have accomplished anything whatsoever, and might only even have. The surprisingly pathetic, time-wasting behavior is revealed in an exposé by Cheyenne Roundtree just.",
+          "scores": {
+            "rouge1": 0.7143,
+            "rouge2": 0.6829,
+            "rougeL": 0.7143
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-659085",
+      "reference_summary": "Over 30 crore fans tuned in to watch the live broadcast on TV of the 2023 ODI World Cup final between India and Australia last Sunday at the Narendra Modi Stadium in Ahmedabad, making it the highest viewed match ever, Disney Star, the official broadcaster of …",
+      "results": {
+        "zero-shot": {
+          "summary": "MUMBAI: Over 30 crore fans tuned in to watch the live broadcast on TV of the 2023 ODI World Cup final between India and Australia last Sunday at the Narendra Modi Stadium in Ahmedabad, making it the highest viewed match ever, Disney Star, the official broadcaster of the tournament, stated in a release on Thursday. The release mentioned that the Peak concurrency on TV for the final match was at 13 crore, while Peak concurrency on Disney+ Hotstar was at 5. 9 Crore for the finals, a global record for any live sport.",
+          "scores": {
+            "rouge1": 0.6619,
+            "rouge2": 0.6569,
+            "rougeL": 0.6619
+          }
+        },
+        "few-shot": {
+          "summary": "MUMBAI: Over 30 crore fans tuned in to watch the live. The release mentioned that the Peak concurrency on TV for the. 9 Crore for the finals, a global record for any live.",
+          "scores": {
+            "rouge1": 0.4051,
+            "rouge2": 0.2597,
+            "rougeL": 0.3544
+          }
+        },
+        "cot": {
+          "summary": "MUMBAI: Over 30 crore fans tuned in to watch the live broadcast on TV. \". The release mentioned that the Peak concurrency on TV for the final match was.",
+          "scores": {
+            "rouge1": 0.4865,
+            "rouge2": 0.3333,
+            "rougeL": 0.4595
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-32389",
+      "reference_summary": "Black Friday is on the horizon but Black Friday deals are already turning up, including these cordless vacuum deals.",
+      "results": {
+        "zero-shot": {
+          "summary": "Black Friday is typically the biggest sales event of the year, and while it still isn’t quite here yet, we’re already starting to see some Black Friday deals taking place. This is great news if you want to add a new cordless vacuum to your smart home. A cordless vacuum can make keeping things clean around the house a lot easier, and right now they make saving some money a little easier as well.",
+          "scores": {
+            "rouge1": 0.2105,
+            "rouge2": 0.1075,
+            "rougeL": 0.1895
+          }
+        },
+        "few-shot": {
+          "summary": "Black Friday is typically the biggest sales event of the year. This is great news if you want to add a new. A cordless vacuum can make keeping things clean around the house.",
+          "scores": {
+            "rouge1": 0.2308,
+            "rouge2": 0.12,
+            "rougeL": 0.2308
+          }
+        },
+        "cot": {
+          "summary": "Black Friday is typically the biggest sales event of the year, and while it. The Dyson V15 is also capable of transforming into a handheld vacuum with one. This is great news if you want to add a new cordless vacuum to.",
+          "scores": {
+            "rouge1": 0.1967,
+            "rouge2": 0.1017,
+            "rougeL": 0.1967
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-103812",
+      "reference_summary": "IFP Advisors Inc trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOG – Free Report) by 13.7% during the 2nd quarter, according to its most recent disclosure with the Securities and Exchange Commission. The firm owned 45,814 shares of the information …",
+      "results": {
+        "zero-shot": {
+          "summary": "IFP Advisors Inc trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOG–Free Report) by 13. 7% during the 2nd quarter, according to its most recent disclosure with the Securities and Exchange Commission.",
+          "scores": {
+            "rouge1": 0.8831,
+            "rouge2": 0.88,
+            "rougeL": 0.8831
+          }
+        },
+        "few-shot": {
+          "summary": "IFP Advisors Inc trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOG–Free Report) by 13. 7% during the 2nd quarter, according to its most recent disclosure.",
+          "scores": {
+            "rouge1": 0.7887,
+            "rouge2": 0.7826,
+            "rougeL": 0.7887
+          }
+        },
+        "cot": {
+          "summary": "IFP Advisors Inc trimmed its holdings in shares of Alphabet Inc. (NASDAQ:GOOG–Free Report). (NASDAQ:GOOG–Free Report) by 13.",
+          "scores": {
+            "rouge1": 0.5312,
+            "rouge2": 0.5161,
+            "rougeL": 0.5312
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-335450",
+      "reference_summary": "The use of the cloud for the accessibility and management of automation systems is becoming more prevalent. The use of the cloud for the accessibility and management of automation systems is becoming more prevalent.",
+      "results": {
+        "zero-shot": {
+          "summary": "Wilmington, Delaware, United States, Nov. 14, 2023 (GLOBE NEWSWIRE) --Transparency Market Research Inc. -The market for commercial building automation accounted for US$ 32.",
+          "scores": {
+            "rouge1": 0.1404,
+            "rouge2": 0.0,
+            "rougeL": 0.1404
+          }
+        },
+        "few-shot": {
+          "summary": "Wilmington, Delaware, United States, Nov. 14, 2023 (GLOBE NEWSWIRE) --Transparency Market Research Inc. -The market for commercial building automation accounted for US$ 32.",
+          "scores": {
+            "rouge1": 0.1404,
+            "rouge2": 0.0,
+            "rougeL": 0.1404
+          }
+        },
+        "cot": {
+          "summary": "Wilmington, Delaware, United States, Nov. com. 14, 2023 (GLOBE NEWSWIRE) --Transparency Market Research Inc.",
+          "scores": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-6925",
+      "reference_summary": "Pranav Madhaik, 14, felt unwell after a fitness trial on Oct 5 and died six days later.",
+      "results": {
+        "zero-shot": {
+          "summary": "SINGAPORE: The Singapore Sports School student whodied after feeling unwell following a fitness trialwas taken to the National University Hospital (NUH) in line with medical protocol, the Singapore Civil Defence Force (SCDF) said on Tuesday (Oct 24). NUH is equipped with paediatric emergency medical facilities and was the fastest option at the time, said SCDF in response to queries on why14-year-old Pranav Madhaikwas not taken to Khoo Teck Puat Hospital which is nearer to the school in Woodlands. Giving a timeline of its response, SCDF said it received a call for assistance at about 6.",
+          "scores": {
+            "rouge1": 0.1404,
+            "rouge2": 0.0179,
+            "rougeL": 0.1053
+          }
+        },
+        "few-shot": {
+          "summary": "SINGAPORE: The Singapore Sports School student whodied after feeling unwell following. NUH is equipped with paediatric emergency medical facilities and was the. Giving a timeline of its response, SCDF said it received a.",
+          "scores": {
+            "rouge1": 0.16,
+            "rouge2": 0.0,
+            "rougeL": 0.08
+          }
+        },
+        "cot": {
+          "summary": "SINGAPORE: The Singapore Sports School student whodied after feeling unwell following a fitness trialwas. Pranav died six days later on Oct 11. NUH is equipped with paediatric emergency medical facilities and was the fastest option at.",
+          "scores": {
+            "rouge1": 0.4528,
+            "rouge2": 0.1961,
+            "rougeL": 0.2642
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-95438",
+      "reference_summary": "Tripadvisor users ranked three cities in Italy—Rome, Florence, and Naples—among the top 10 best food destinations around the world.",
+      "results": {
+        "zero-shot": {
+          "summary": "The ingredients of Caprese salad mimic the colors of the Italian flag. Italian cuisine is a perennial favorite both in the U. S.",
+          "scores": {
+            "rouge1": 0.1364,
+            "rouge2": 0.0,
+            "rougeL": 0.0909
+          }
+        },
+        "few-shot": {
+          "summary": "The ingredients of Caprese salad mimic the colors of the Italian. Italian cuisine is a perennial favorite both in the U. S.",
+          "scores": {
+            "rouge1": 0.1395,
+            "rouge2": 0.0,
+            "rougeL": 0.093
+          }
+        },
+        "cot": {
+          "summary": "The ingredients of Caprese salad mimic the colors of the Italian flag. Read more: Best Food Cities in Italy: What To Eat Where. Italian cuisine is a perennial favorite both in the U.",
+          "scores": {
+            "rouge1": 0.2593,
+            "rouge2": 0.1154,
+            "rougeL": 0.1481
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-185828",
+      "reference_summary": "Citizens Business Bank acquired a new stake in International Business Machines Co. (NYSE:IBM – Free Report) in the 2nd quarter, according to its most recent disclosure with the Securities and Exchange Commission. The firm acquired 1,981 shares of the technolo…",
+      "results": {
+        "zero-shot": {
+          "summary": "Citizens Business Bank acquired a new stake in International Business Machines Co. (NYSE:IBM–Free Report) in the 2nd quarter, according to its most recent disclosure with the Securities and Exchange Commission. The firm acquired 1,981 shares of the technology company’s stock, valued at approximately $265,000.",
+          "scores": {
+            "rouge1": 0.8889,
+            "rouge2": 0.8864,
+            "rougeL": 0.8889
+          }
+        },
+        "few-shot": {
+          "summary": "Citizens Business Bank acquired a new stake in International Business Machines. (NYSE:IBM–Free Report) in the 2nd quarter, according to its most recent. The firm acquired 1,981 shares of the technology company’s stock, valued.",
+          "scores": {
+            "rouge1": 0.8205,
+            "rouge2": 0.7632,
+            "rougeL": 0.8205
+          }
+        },
+        "cot": {
+          "summary": "Citizens Business Bank acquired a new stake in International Business Machines Co. (NYSE:IBM–Free Report). (NYSE:IBM–Free Report) in the 2nd quarter, according to its most recent disclosure with the.",
+          "scores": {
+            "rouge1": 0.7671,
+            "rouge2": 0.7606,
+            "rougeL": 0.7671
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-167727",
+      "reference_summary": "\"I know for a fact that this ptosis narrowed my opportunities and made me the subject of unwanted attention. But despite the gossip, the comments, and the questions, I never felt diminished by it,\" said Zeenat Aman in an Instagram post",
+      "results": {
+        "zero-shot": {
+          "summary": "Zeenat Aman, the yesteryear actor, who has been quite popular on Instagram for her engaging posts, chose to apprise her followers about being diagnosed with an eye condition called ptosis and undergoing advanced treatment for the same. She said, “On May 18, 2023, I shot for the cover of Vogue India. On May 19, 2023, I woke up early in the morning, packed a small suitcase, and kissed Lily on her muzzle.",
+          "scores": {
+            "rouge1": 0.3186,
+            "rouge2": 0.018,
+            "rougeL": 0.1239
+          }
+        },
+        "few-shot": {
+          "summary": "Zeenat Aman, the yesteryear actor, who has been quite popular on. She said, “On May 18, 2023, I shot for the cover. On May 19, 2023, I woke up early in the morning.",
+          "scores": {
+            "rouge1": 0.2703,
+            "rouge2": 0.0278,
+            "rougeL": 0.1351
+          }
+        },
+        "cot": {
+          "summary": "Zeenat Aman, the yesteryear actor, who has been quite popular on Instagram for her. 📣For more lifestyle news, follow us onInstagram|Twitter|Facebookand don’t miss out on the latest updates!. She said, “On May 18, 2023, I shot for the cover of Vogue India.",
+          "scores": {
+            "rouge1": 0.2326,
+            "rouge2": 0.0238,
+            "rougeL": 0.093
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-337915",
+      "reference_summary": "Mckinley Capital Management LLC decreased its position in Genmab A/S (NASDAQ:GMAB – Free Report) by 2.7% in the 2nd quarter, according to the company in its most recent filing with the Securities & Exchange Commission. The institutional investor owned 12,353 …",
+      "results": {
+        "zero-shot": {
+          "summary": "Mckinley Capital Management LLC decreased its position in Genmab A/S (NASDAQ:GMAB–Free Report) by 2. 7% in the 2nd quarter, according to the company in its most recent filing with the Securities & Exchange Commission. The institutional investor owned 12,353 shares of the company’s stock after selling 340 shares during the period.",
+          "scores": {
+            "rouge1": 0.866,
+            "rouge2": 0.8632,
+            "rougeL": 0.866
+          }
+        },
+        "few-shot": {
+          "summary": "Mckinley Capital Management LLC decreased its position in Genmab A/S (NASDAQ:GMAB–Free. 7% in the 2nd quarter, according to the company in its. The institutional investor owned 12,353 shares of the company’s stock after.",
+          "scores": {
+            "rouge1": 0.8,
+            "rouge2": 0.7179,
+            "rougeL": 0.775
+          }
+        },
+        "cot": {
+          "summary": "Mckinley Capital Management LLC decreased its position in Genmab A/S (NASDAQ:GMAB–Free Report) by 2. comto get the latest 13F filings and insider trades for Genmab A/S (NASDAQ:GMAB–Free Report). 7% in the 2nd quarter, according to the company in its most recent filing.",
+          "scores": {
+            "rouge1": 0.7111,
+            "rouge2": 0.6591,
+            "rougeL": 0.6889
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-13405",
+      "reference_summary": "A woman’s newly adopted cat may have brought her an unwelcome gift: a bacterial germ that caused her months of diarrhea. In a new case report this month, doctors say that the woman’s bout of recurrent Clostridioides difficile could have been fueled by her cat…",
+      "results": {
+        "zero-shot": {
+          "summary": "A woman’s newly adopted cat may have brought her an unwelcome gift: a bacterial germ that caused her months of diarrhea. In a new case report this month, doctors say that the woman’s bout of recurrent Clostridioides difficile could have been fueled by her cat, who also tested positive for the bacteria. Thankfully, both the cat and the owner were eventually treated successfully, but the case might represent the first known instance of cat-to-human transmission of the infection.",
+          "scores": {
+            "rouge1": 0.7287,
+            "rouge2": 0.7244,
+            "rougeL": 0.7287
+          }
+        },
+        "few-shot": {
+          "summary": "A woman’s newly adopted cat may have brought her an unwelcome. In a new case report this month, doctors say that the. Thankfully, both the cat and the owner were eventually treated successfully.",
+          "scores": {
+            "rouge1": 0.5926,
+            "rouge2": 0.5316,
+            "rougeL": 0.5926
+          }
+        },
+        "cot": {
+          "summary": "A woman’s newly adopted cat may have brought her an unwelcome gift: a bacterial. diff, the authors wrote. In a new case report this month, doctors say that the woman’s bout of.",
+          "scores": {
+            "rouge1": 0.7407,
+            "rouge2": 0.7089,
+            "rougeL": 0.7407
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-126016",
+      "reference_summary": "TL;DR: Let's face it, we love our iPads, but they can be super difficult to type on. Change the way you experience your tablet with The Apple Magic Keyboard Folio for iPad 10th Gen and it's on sale for only $98.97 until 11/9 at 11:59 PM. — Read the rest",
+      "results": {
+        "zero-shot": {
+          "summary": "TL;DR:Let's face it, we love our iPads, but they can be super difficult to type on. Change the way you experience your tablet with TheApple Magic Keyboard Folio for iPad 10th Genand it's on sale for only $98. 97 until 11/9 at 11:59 PM.",
+          "scores": {
+            "rouge1": 0.9143,
+            "rouge2": 0.8738,
+            "rougeL": 0.9143
+          }
+        },
+        "few-shot": {
+          "summary": "TL;DR:Let's face it, we love our iPads, but they can be. Change the way you experience your tablet with TheApple Magic Keyboard. 97 until 11/9 at 11:59 PM.",
+          "scores": {
+            "rouge1": 0.7273,
+            "rouge2": 0.6512,
+            "rougeL": 0.7273
+          }
+        },
+        "cot": {
+          "summary": "TL;DR:Let's face it, we love our iPads, but they can be super difficult to. 99) or 60% off! Hurry this limited-time pricing only lasts until 11/9 at 11:59. Change the way you experience your tablet with TheApple Magic Keyboard Folio for iPad.",
+          "scores": {
+            "rouge1": 0.7184,
+            "rouge2": 0.6337,
+            "rougeL": 0.5825
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-76320",
+      "reference_summary": "Russian President Vladimir Putin is set to visit Kyrgyzstan on Thursday, marking his first known trip abroad since the International Criminal Court (ICC) issued a warrant for his arrest. Putin has rarely traveled abroad since Russia's invasion of Ukraine in 2…",
+      "results": {
+        "zero-shot": {
+          "summary": "Agencies Vladimir Putin is also due to travel to China next week MOSCOW: Vladimir Putin will visit Kyrgyzstan on Thursday, the presidential office of the Central Asian country said, in what would be the Russian leader's first known trip abroad since the International Criminal Court issued a warrant for his arrest. Putin has rarely travelled abroad since the start of Moscow's invasion of Ukraine in early 2022 and is not known to have left Russia since the ICC issued in March a warrant for him on suspicion of illegally deporting hundreds of children from Ukraine. The Kremlin denies those allegations.",
+          "scores": {
+            "rouge1": 0.5,
+            "rouge2": 0.3803,
+            "rougeL": 0.4583
+          }
+        },
+        "few-shot": {
+          "summary": "Agencies Vladimir Putin is also due to travel to China next. Putin has rarely travelled abroad since the start of Moscow's invasion. The Kremlin denies those allegations.",
+          "scores": {
+            "rouge1": 0.3714,
+            "rouge2": 0.2059,
+            "rougeL": 0.3143
+          }
+        },
+        "cot": {
+          "summary": "Agencies Vladimir Putin is also due to travel to China next week MOSCOW: Vladimir. Can Indian drug makers benefit? ‘Use no more than what you need’: How Amazon. Putin has rarely travelled abroad since the start of Moscow's invasion of Ukraine in.",
+          "scores": {
+            "rouge1": 0.3529,
+            "rouge2": 0.241,
+            "rougeL": 0.3294
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-715319",
+      "reference_summary": "A high-level meeting between Italian and Saudi officials took place Monday ahead of this week's landmark international climate conference.",
+      "results": {
+        "zero-shot": {
+          "summary": "Italian and Saudi officials held an official meeting on Monday to discuss future partnerships and joint ventures in oil, mining and gas, as Italian Minister of Business Adolfo Urso traveled to Riyadh ahead of the COP28 international climate conference in Dubai, which officially begins on Thursday. \"Italy and Saudi Arabia are committed to developing a regulatory and industrial context that favors and accelerates strategic autonomy in the critical raw materials sector,\" Ursosaidin a press conference on Monday following dialogue with Khalid Al Salem, President of the Royal Commission for Jubail and Yanbu. Though enhancing partnership in oil, gas and mining were \"at the center of the conversation,\" Al Salem and Urso also discussed \"the realization of investments in mutual industrial sectors of interest\" including automotives, agriculture and green energy.",
+          "scores": {
+            "rouge1": 0.16,
+            "rouge2": 0.0811,
+            "rougeL": 0.1333
+          }
+        },
+        "few-shot": {
+          "summary": "Italian and Saudi officials held an official meeting on Monday to. \"Italy and Saudi Arabia are committed to developing a regulatory and. Though enhancing partnership in oil, gas and mining were \"at the.",
+          "scores": {
+            "rouge1": 0.2593,
+            "rouge2": 0.1154,
+            "rougeL": 0.1852
+          }
+        },
+        "cot": {
+          "summary": "Italian and Saudi officials held an official meeting on Monday to discuss future partnerships. 12, when international delegations will discuss further areas of cooperation in the energy sector. \"Italy and Saudi Arabia are committed to developing a regulatory and industrial context that.",
+          "scores": {
+            "rouge1": 0.2857,
+            "rouge2": 0.0984,
+            "rougeL": 0.1905
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-636791",
+      "reference_summary": "The Fed minutes showed the central bank would proceed \"carefully\" and that \"all participants judged it appropriate to maintain\" the current rate setting.",
+      "results": {
+        "zero-shot": {
+          "summary": "Agencies The dollar index held around 2-1/2-month lows after minutes of the Federal Reserve's last meeting did little to dislodge market expectations that its monetary tightening cycle was over. The Fed minutes showed the central bank would proceed \"carefully\" and that \"all participants judged it appropriate to maintain\" the current rate setting. Fed officials agreed they would only raise interest rates if progress in controlling inflation faltered, reiterating recent comments by policymakers that left the door open for more tightening even as markets have moved to price in cuts from early next year.",
+          "scores": {
+            "rouge1": 0.3833,
+            "rouge2": 0.3729,
+            "rougeL": 0.3833
+          }
+        },
+        "few-shot": {
+          "summary": "Agencies The dollar index held around 2-1/2-month lows after minutes of. The Fed minutes showed the central bank would proceed \"carefully\" and. Fed officials agreed they would only raise interest rates if progress.",
+          "scores": {
+            "rouge1": 0.4068,
+            "rouge2": 0.3509,
+            "rougeL": 0.3729
+          }
+        },
+        "cot": {
+          "summary": "Agencies The dollar index held around 2-1/2-month lows after minutes of the Federal Reserve's. 87% dividend yields and continuous dividend payments for 7 years 7 mins read Weekly. The Fed minutes showed the central bank would proceed \"carefully\" and that \"all participants.",
+          "scores": {
+            "rouge1": 0.4348,
+            "rouge2": 0.3881,
+            "rougeL": 0.4058
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-690791",
+      "reference_summary": "Jeff Bezos calls work-life balance a \"debilitating\" phrase. TIAA's CEO calls it a \"lie.\" Microsoft CEO Satya Nadella prefers \"work-life harmony.\"",
+      "results": {
+        "zero-shot": {
+          "summary": "You wouldn't think that the phrase \"work-life balance\" would be a controversial one. However, the way that different CEOs interpret the term varies greatly. Some think of it as an important thing to maintain, while others hate it or call it a \"lie.",
+          "scores": {
+            "rouge1": 0.2319,
+            "rouge2": 0.1194,
+            "rougeL": 0.2029
+          }
+        },
+        "few-shot": {
+          "summary": "You wouldn't think that the phrase \"work-life balance\" would be a. However, the way that different CEOs interpret the term varies greatly. Some think of it as an important thing to maintain, while.",
+          "scores": {
+            "rouge1": 0.2034,
+            "rouge2": 0.0702,
+            "rougeL": 0.1695
+          }
+        },
+        "cot": {
+          "summary": "You wouldn't think that the phrase \"work-life balance\" would be a controversial one. Musk has continued the habit while working at Tesla and buying Twitter, often spending. However, the way that different CEOs interpret the term varies greatly.",
+          "scores": {
+            "rouge1": 0.1562,
+            "rouge2": 0.0645,
+            "rougeL": 0.125
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-83597",
+      "reference_summary": "Italy boss Luciano Spalletti is the latest Azzurri boss to be in charge of the national side while a scandal engulfs the Italian game as the game against England looms.",
+      "results": {
+        "zero-shot": {
+          "summary": "Italys National Football team during the UEFA EURO 2024 European qualifier match between Italy and. [+] Malta in Bari, Italy, on October 14, 2023. (Photo by Gabriele Maricchiolo/NurPhoto via Getty Images) New Italy boss Luciano Spalletti is the latest Azzurri boss to be in charge of the national side while a scandal engulfs the Italian game.",
+          "scores": {
+            "rouge1": 0.5814,
+            "rouge2": 0.5476,
+            "rougeL": 0.5581
+          }
+        },
+        "few-shot": {
+          "summary": "Italys National Football team during the UEFA EURO 2024 European qualifier. [+] Malta in Bari, Italy, on October 14, 2023. (Photo by Gabriele Maricchiolo/NurPhoto via Getty Images) New Italy boss Luciano.",
+          "scores": {
+            "rouge1": 0.1967,
+            "rouge2": 0.0678,
+            "rougeL": 0.0984
+          }
+        },
+        "cot": {
+          "summary": "Italys National Football team during the UEFA EURO 2024 European qualifier match between Italy. As history has shown, when there’s a scandal erupting in Italy, the national side. [+] Malta in Bari, Italy, on October 14, 2023.",
+          "scores": {
+            "rouge1": 0.2687,
+            "rouge2": 0.0923,
+            "rougeL": 0.1493
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-10125",
+      "reference_summary": "Experts have reconstructed the face of the 'Ice Maiden', an Inca girl sacrificed in the Andes",
+      "results": {
+        "zero-shot": {
+          "summary": "Archaeologists have revealed a model showing what Peru's most famous mummy would have looked like. The mummy, known as \"Juanita\" or the \"Inca Ice Maiden\", was an Inca girl who is thought to have been sacrificed in a ritual more than 500 years ago. Scientists worked with a specialist in facial reconstruction to build a silicon bust of the mummy.",
+          "scores": {
+            "rouge1": 0.3117,
+            "rouge2": 0.1333,
+            "rougeL": 0.2857
+          }
+        },
+        "few-shot": {
+          "summary": "Archaeologists have revealed a model showing what Peru's most famous mummy. The mummy, known as \"Juanita\" or the \"Inca Ice Maiden\", was. Scientists worked with a specialist in facial reconstruction to build a.",
+          "scores": {
+            "rouge1": 0.28,
+            "rouge2": 0.0417,
+            "rougeL": 0.24
+          }
+        },
+        "cot": {
+          "summary": "Archaeologists have revealed a model showing what Peru's most famous mummy would have looked. \". The mummy, known as \"Juanita\" or the \"Inca Ice Maiden\", was an Inca girl.",
+          "scores": {
+            "rouge1": 0.3556,
+            "rouge2": 0.1395,
+            "rougeL": 0.3556
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-337044",
+      "reference_summary": "Harbor Custom Development, Inc. (NASDAQ:HCDIZ – Get Free Report) was the target of a significant increase in short interest in October. As of October 31st, there was short interest totalling 9,500 shares, an increase of 55.7% from the October 15th total of 6,…",
+      "results": {
+        "zero-shot": {
+          "summary": "Harbor Custom Development, Inc. (NASDAQ:HCDIZ–Get Free Report) was the target of a significant increase in short interest in October. As of October 31st, there was short interest totalling 9,500 shares, an increase of 55.",
+          "scores": {
+            "rouge1": 0.9024,
+            "rouge2": 0.9,
+            "rougeL": 0.9024
+          }
+        },
+        "few-shot": {
+          "summary": "Harbor Custom Development, Inc. (NASDAQ:HCDIZ–Get Free Report) was the target of a significant increase in. As of October 31st, there was short interest totalling 9,500 shares.",
+          "scores": {
+            "rouge1": 0.7838,
+            "rouge2": 0.75,
+            "rougeL": 0.7838
+          }
+        },
+        "cot": {
+          "summary": "Harbor Custom Development, Inc. (Get Free Report) Want More Great Investing Ideas?10 Stocks to Sell NOW!3 Stocks to. (NASDAQ:HCDIZ–Get Free Report) was the target of a significant increase in short interest in.",
+          "scores": {
+            "rouge1": 0.4938,
+            "rouge2": 0.4557,
+            "rougeL": 0.4938
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-478265",
+      "reference_summary": "The Dell XPS 13 Plus, a laptop that's both beautiful and powerful, is currently available with a $450 discount from Best Buy as part of its Black Friday deals.",
+      "results": {
+        "zero-shot": {
+          "summary": "The Dell XPS 13 Plus, one of our favorite laptops inDell Black Friday deals, is currently on sale with a $450 discount from Best Buy that pulls its price down to $1,500 from $1,950. It’s still not cheap, but with the performance and features that it provides, it could be considered a steal for its lowered price. We’re not sure when the offer expires — it could happen well before Black Friday arrives — so if you’re interested in this laptop, you’re going to have to complete the purchase as soon as possible if you want the savings.",
+          "scores": {
+            "rouge1": 0.3788,
+            "rouge2": 0.2,
+            "rougeL": 0.2576
+          }
+        },
+        "few-shot": {
+          "summary": "The Dell XPS 13 Plus, one of our favorite laptops inDell. It’s still not cheap, but with the performance and features that. We’re not sure when the offer expires — it could happen.",
+          "scores": {
+            "rouge1": 0.3125,
+            "rouge2": 0.129,
+            "rougeL": 0.2187
+          }
+        },
+        "cot": {
+          "summary": "The Dell XPS 13 Plus, one of our favorite laptops inDell Black Friday deals. There’s no assurance that the offer will stay online until the otherBlack Friday dealsfor. It’s still not cheap, but with the performance and features that it provides, it.",
+          "scores": {
+            "rouge1": 0.3514,
+            "rouge2": 0.1667,
+            "rougeL": 0.2432
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-98984",
+      "reference_summary": "Evercore Wealth Management LLC trimmed its position in shares of Shopify Inc. (NYSE:SHOP – Free Report) (TSE:SHOP) by 11.0% in the 2nd quarter, according to the company in its most recent Form 13F filing with the Securities and Exchange Commission. The firm o…",
+      "results": {
+        "zero-shot": {
+          "summary": "Evercore Wealth Management LLC trimmed its position in shares of Shopify Inc. (NYSE:SHOP–Free Report) (TSE:SHOP) by 11. 0% in the 2nd quarter, according to the company in its most recent Form 13F filing with the Securities and Exchange Commission.",
+          "scores": {
+            "rouge1": 0.9655,
+            "rouge2": 0.9647,
+            "rougeL": 0.9655
+          }
+        },
+        "few-shot": {
+          "summary": "Evercore Wealth Management LLC trimmed its position in shares of Shopify. (NYSE:SHOP–Free Report) (TSE:SHOP) by 11. 0% in the 2nd quarter, according to the company in its.",
+          "scores": {
+            "rouge1": 0.8,
+            "rouge2": 0.7671,
+            "rougeL": 0.8
+          }
+        },
+        "cot": {
+          "summary": "Evercore Wealth Management LLC trimmed its position in shares of Shopify Inc. The company's platform enables merchants to displays, manages, markets, and sells its products through. (NYSE:SHOP–Free Report) (TSE:SHOP) by 11.",
+          "scores": {
+            "rouge1": 0.625,
+            "rouge2": 0.4872,
+            "rougeL": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-217080",
+      "reference_summary": "Gold Fields Limited (NYSE:GFI – Get Free Report) has received a consensus recommendation of “Reduce” from the six ratings firms that are covering the stock, MarketBeat reports. Two investment analysts have rated the stock with a sell rating and four have give…",
+      "results": {
+        "zero-shot": {
+          "summary": "Gold Fields Limited (NYSE:GFI–Get Free Report) has received a consensus recommendation of “Reduce” from the six ratings firms that are covering the stock,MarketBeatreports. Two investment analysts have rated the stock with a sell rating and four have given a hold rating to the company. The average 1 year price objective among analysts that have updated their coverage on the stock in the last year is $13.",
+          "scores": {
+            "rouge1": 0.7027,
+            "rouge2": 0.6789,
+            "rougeL": 0.7027
+          }
+        },
+        "few-shot": {
+          "summary": "Gold Fields Limited (NYSE:GFI–Get Free Report) has received a consensus recommendation. Two investment analysts have rated the stock with a sell rating. The average 1 year price objective among analysts that have updated.",
+          "scores": {
+            "rouge1": 0.7013,
+            "rouge2": 0.5867,
+            "rougeL": 0.6494
+          }
+        },
+        "cot": {
+          "summary": "Gold Fields Limited (NYSE:GFI–Get Free Report) has received a consensus recommendation of “Reduce” from. The company was founded in 1887 and is based in Sandton, South Africa. Two investment analysts have rated the stock with a sell rating and four have.",
+          "scores": {
+            "rouge1": 0.7294,
+            "rouge2": 0.6988,
+            "rougeL": 0.7294
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-128069",
+      "reference_summary": "Dublin, Nov. 03, 2023 (GLOBE NEWSWIRE) -- The \"Global Automotive Cooling Fan Market - Industry Size, Share, Trends, Opportunity, and Forecast, 2018-2028\" report has been added to ResearchAndMarkets.com's offering.",
+      "results": {
+        "zero-shot": {
+          "summary": "Dublin, Nov. 03, 2023 (GLOBE NEWSWIRE) -- The\"Global Automotive Cooling Fan Market - Industry Size, Share, Trends, Opportunity, and Forecast, 2018-2028\"report has been added toResearchAndMarkets. com'soffering.",
+          "scores": {
+            "rouge1": 0.8966,
+            "rouge2": 0.8571,
+            "rougeL": 0.8966
+          }
+        },
+        "few-shot": {
+          "summary": "Dublin, Nov. 03, 2023 (GLOBE NEWSWIRE) -- The\"Global Automotive Cooling Fan Market -. com'soffering.",
+          "scores": {
+            "rouge1": 0.5909,
+            "rouge2": 0.5238,
+            "rougeL": 0.5909
+          }
+        },
+        "cot": {
+          "summary": "Dublin, Nov. Attachment. 03, 2023 (GLOBE NEWSWIRE) -- The\"Global Automotive Cooling Fan Market - Industry Size, Share.",
+          "scores": {
+            "rouge1": 0.6522,
+            "rouge2": 0.5909,
+            "rougeL": 0.6522
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-382115",
+      "reference_summary": "Tendulkar praised Kohli's achievement, recalling their first meeting and expressing joy for an Indian breaking his record.",
+      "results": {
+        "zero-shot": {
+          "summary": "Agencies Virat Kohli made cricket history at Wankhede Stadium, securing his 50th ODI century, surpassing Sachin Tendulkar's record. (Image Source: Twitter/ @PandaGallery_) Story outline Virat Kohli made history with his 50th ODI century at Mumbai's Wankhede Stadium Tendulkar praised Kohli's achievement, recalling their first meeting Prime Minister Narendra Modi commends Kohli's excellence and perseverance Tamil Nadu Chief Minister M. K.",
+          "scores": {
+            "rouge1": 0.2927,
+            "rouge2": 0.2,
+            "rougeL": 0.2439
+          }
+        },
+        "few-shot": {
+          "summary": "Agencies Virat Kohli made cricket history at Wankhede Stadium, securing his. (Image Source: Twitter/ @PandaGallery_) Story outline Virat Kohli made history with. K.",
+          "scores": {
+            "rouge1": 0.0976,
+            "rouge2": 0.0,
+            "rougeL": 0.0976
+          }
+        },
+        "cot": {
+          "summary": "Agencies Virat Kohli made cricket history at Wankhede Stadium, securing his 50th ODI century. 3 insights to kick-start your day, featuring Razorpay's flip mode Stock Radar: NTPC on. (Image Source: Twitter/ @PandaGallery_) Story outline Virat Kohli made history with his 50th ODI.",
+          "scores": {
+            "rouge1": 0.0968,
+            "rouge2": 0.0,
+            "rougeL": 0.0968
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-207356",
+      "reference_summary": "HAMPTON, N.J., Nov. 07, 2023 (GLOBE NEWSWIRE) -- Celldex Therapeutics, Inc. (“Celldex” or the “Company”) (Nasdaq: CLDX) today announced the pricing of an underwritten public offering of 7,425,000 shares of its common stock at a public offering price of $27.00…",
+      "results": {
+        "zero-shot": {
+          "summary": "HAMPTON, N. J. , Nov.",
+          "scores": {
+            "rouge1": 0.1702,
+            "rouge2": 0.1333,
+            "rougeL": 0.1702
+          }
+        },
+        "few-shot": {
+          "summary": "HAMPTON, N. J. Nov.",
+          "scores": {
+            "rouge1": 0.1702,
+            "rouge2": 0.1333,
+            "rougeL": 0.1702
+          }
+        },
+        "cot": {
+          "summary": "HAMPTON, N. com. J.",
+          "scores": {
+            "rouge1": 0.1277,
+            "rouge2": 0.0444,
+            "rougeL": 0.1277
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-280971",
+      "reference_summary": "Pinnacle Financial Partners, Inc. (NASDAQ:PNFPP – Get Free Report)’s share price fell 1.3% during mid-day trading on Thursday . The company traded as low as $22.92 and last traded at $22.95. 15,625 shares traded hands during trading, an increase of 6% from th…",
+      "results": {
+        "zero-shot": {
+          "summary": "Pinnacle Financial Partners, Inc. (NASDAQ:PNFPP–Get Free Report)’s share price fell 1. 3% during mid-day trading on Thursday.",
+          "scores": {
+            "rouge1": 0.6087,
+            "rouge2": 0.597,
+            "rougeL": 0.6087
+          }
+        },
+        "few-shot": {
+          "summary": "Pinnacle Financial Partners, Inc. (NASDAQ:PNFPP–Get Free Report)’s share price fell 1. 3% during mid-day trading on Thursday.",
+          "scores": {
+            "rouge1": 0.6087,
+            "rouge2": 0.597,
+            "rougeL": 0.6087
+          }
+        },
+        "cot": {
+          "summary": "Pinnacle Financial Partners, Inc. The company accepts various deposits, including savings, noninterest-bearing and interest-bearing checking, money market, and. (NASDAQ:PNFPP–Get Free Report)’s share price fell 1.",
+          "scores": {
+            "rouge1": 0.4359,
+            "rouge2": 0.3421,
+            "rougeL": 0.359
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-13316",
+      "reference_summary": "The Pentagon estimates that China is set to at least double its nuclear warheads by the end of the decade.",
+      "results": {
+        "zero-shot": {
+          "summary": "China is working toward doubling its nuclear warheads to 1,000 by the end of the decade, according to aPentagon report reviewed by Insider. China was accelerating its development of capabilities and concepts to \"fight and win wars\" against a \"strong enemy,\" a likely euphemism for the United States, said the Pentagon's \"Military and Security Developments Involving the People's Republic of China\" report. In 2020, the Department of Defense estimated China's operational nuclear warhead stockpile to be in the low 200s, which they expected to at least double by 2030.",
+          "scores": {
+            "rouge1": 0.3009,
+            "rouge2": 0.2162,
+            "rougeL": 0.1947
+          }
+        },
+        "few-shot": {
+          "summary": "China is working toward doubling its nuclear warheads to 1,000 by. China was accelerating its development of capabilities and concepts to \"fight. In 2020, the Department of Defense estimated China's operational nuclear warhead.",
+          "scores": {
+            "rouge1": 0.3273,
+            "rouge2": 0.1132,
+            "rougeL": 0.2909
+          }
+        },
+        "cot": {
+          "summary": "China is working toward doubling its nuclear warheads to 1,000 by the end of. In 2022, China rejected requests by the US to hold diplomatic discussions over China's. China was accelerating its development of capabilities and concepts to \"fight and win wars\".",
+          "scores": {
+            "rouge1": 0.3438,
+            "rouge2": 0.1935,
+            "rougeL": 0.3125
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-217745",
+      "reference_summary": "Shares of Kura Oncology, Inc. (NASDAQ:KURA – Get Free Report) have received an average rating of “Moderate Buy” from the eight brokerages that are covering the firm, MarketBeat.com reports. One analyst has rated the stock with a hold recommendation and seven …",
+      "results": {
+        "zero-shot": {
+          "summary": "Shares of Kura Oncology, Inc. (NASDAQ:KURA–Get Free Report) have received an average rating of “Moderate Buy” from the eight brokerages that are covering the firm,MarketBeat. comreports.",
+          "scores": {
+            "rouge1": 0.7887,
+            "rouge2": 0.7826,
+            "rougeL": 0.7887
+          }
+        },
+        "few-shot": {
+          "summary": "Shares of Kura Oncology, Inc. (NASDAQ:KURA–Get Free Report) have received an average rating of “Moderate Buy”. comreports.",
+          "scores": {
+            "rouge1": 0.5902,
+            "rouge2": 0.5763,
+            "rougeL": 0.5902
+          }
+        },
+        "cot": {
+          "summary": "Shares of Kura Oncology, Inc. Its lead product candidates are ziftomenib, a small molecule inhibitor of the menin-Lysine K-specific. (NASDAQ:KURA–Get Free Report) have received an average rating of “Moderate Buy” from the eight.",
+          "scores": {
+            "rouge1": 0.6076,
+            "rouge2": 0.4935,
+            "rougeL": 0.5316
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-70166",
+      "reference_summary": "Budapest will stick to its energy contracts with Russia despite sanctions pressure, Hungary’s FM Peter Szijjarto says Read Full Article at RT.com",
+      "results": {
+        "zero-shot": {
+          "summary": "Budapest will stick to agreements with Russia in the energy sphere despite Ukraine-related sanctions and pressure from EU peers, Hungarian Foreign Minister Peter Szijjarto told RT on Friday, on the sidelines of the annual Russian Energy Week forum. The official stressed that his country will always put its national interests first and that energy cooperation with Russia is among its key priorities in this regard. “Our national interest is to definitely have reliable, mutually respectful cooperation with Russia.",
+          "scores": {
+            "rouge1": 0.2718,
+            "rouge2": 0.099,
+            "rougeL": 0.233
+          }
+        },
+        "few-shot": {
+          "summary": "Budapest will stick to agreements with Russia in the energy sphere. The official stressed that his country will always put its national. “Our national interest is to definitely have reliable, mutually respectful cooperation.",
+          "scores": {
+            "rouge1": 0.2807,
+            "rouge2": 0.1455,
+            "rougeL": 0.2105
+          }
+        },
+        "cot": {
+          "summary": "Budapest will stick to agreements with Russia in the energy sphere despite Ukraine-related sanctions. For more stories on economy & finance visitRT's business section. The official stressed that his country will always put its national interests first and.",
+          "scores": {
+            "rouge1": 0.3492,
+            "rouge2": 0.1311,
+            "rougeL": 0.2857
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-150890",
+      "reference_summary": "Pinkerton Retirement Specialists LLC lessened its stake in shares of Gilead Sciences, Inc. (NASDAQ:GILD – Free Report) by 20.0% in the second quarter, according to the company in its most recent 13F filing with the Securities & Exchange Commission. The instit…",
+      "results": {
+        "zero-shot": {
+          "summary": "Pinkerton Retirement Specialists LLC lessened its stake in shares of Gilead Sciences, Inc. (NASDAQ:GILD–Free Report) by 20. 0% in the second quarter, according to the company in its most recent 13F filing with the Securities & Exchange Commission.",
+          "scores": {
+            "rouge1": 0.975,
+            "rouge2": 0.9744,
+            "rougeL": 0.975
+          }
+        },
+        "few-shot": {
+          "summary": "Pinkerton Retirement Specialists LLC lessened its stake in shares of Gilead. (NASDAQ:GILD–Free Report) by 20. 0% in the second quarter, according to the company in its.",
+          "scores": {
+            "rouge1": 0.8116,
+            "rouge2": 0.7761,
+            "rougeL": 0.8116
+          }
+        },
+        "cot": {
+          "summary": "Pinkerton Retirement Specialists LLC lessened its stake in shares of Gilead Sciences, Inc. (NASDAQ:GILD–Free Report). (NASDAQ:GILD–Free Report) by 20.",
+          "scores": {
+            "rouge1": 0.5938,
+            "rouge2": 0.5806,
+            "rougeL": 0.5938
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-391093",
+      "reference_summary": "FREMONT, Calif., Nov. 16, 2023 (GLOBE NEWSWIRE) -- Enovix Corporation (“Enovix”) (Nasdaq: ENVX), an advanced silicon battery company, today announced it has been named a CES® 2024 Innovation Awards Honoree for its pioneering BrakeFlow™ safety technology. The …",
+      "results": {
+        "zero-shot": {
+          "summary": "FREMONT, Calif. , Nov. 16, 2023 (GLOBE NEWSWIRE) --Enovix Corporation(“Enovix”) (Nasdaq: ENVX), an advanced silicon battery company, today announced it has been named aCES®2024 Innovation Awards Honoreefor its pioneering BrakeFlow™safety technology.",
+          "scores": {
+            "rouge1": 0.8986,
+            "rouge2": 0.8358,
+            "rougeL": 0.8986
+          }
+        },
+        "few-shot": {
+          "summary": "FREMONT, Calif. Nov. 16, 2023 (GLOBE NEWSWIRE) --Enovix Corporation(“Enovix”) (Nasdaq: ENVX), an advanced silicon.",
+          "scores": {
+            "rouge1": 0.5882,
+            "rouge2": 0.5714,
+            "rougeL": 0.5882
+          }
+        },
+        "cot": {
+          "summary": "FREMONT, Calif. com. Nov.",
+          "scores": {
+            "rouge1": 0.15,
+            "rouge2": 0.0526,
+            "rougeL": 0.15
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-79956",
+      "reference_summary": "(marketscreener.com) Valoe Corporation Stock Exchange Release 1 November 2023 at 8.40 Finnish time Valoe Corporation has on the previously announced reverse split date, 31 October 2023, executed a reverse share split and thereto related directed share…",
+      "results": {
+        "zero-shot": {
+          "summary": "Valoe Corporation Stock Exchange Release 1 November 2023 at 8. 40 Finnish time Valoe Corporation (\"Valoe\" or \"Company\") has on the previously announced reverse split date, 31 October 2023, executed a reverse share split and thereto related directed share issue without consideration, redemption of shares and cancellation of shares. After these measures, the new number of shares in the Company is 3,116,630.",
+          "scores": {
+            "rouge1": 0.7059,
+            "rouge2": 0.68,
+            "rougeL": 0.7059
+          }
+        },
+        "few-shot": {
+          "summary": "Valoe Corporation Stock Exchange Release 1 November 2023 at 8. 40 Finnish time Valoe Corporation (\"Valoe\" or \"Company\") has on the. After these measures, the new number of shares in the Company.",
+          "scores": {
+            "rouge1": 0.5143,
+            "rouge2": 0.4706,
+            "rougeL": 0.5143
+          }
+        },
+        "cot": {
+          "summary": "Valoe Corporation Stock Exchange Release 1 November 2023 at 8. Valoe is headquartered in Mikkeli, Finland, with production facilities in Juva, Finland, and Vilnius. 40 Finnish time Valoe Corporation (\"Valoe\" or \"Company\") has on the previously announced reverse.",
+          "scores": {
+            "rouge1": 0.5789,
+            "rouge2": 0.4865,
+            "rougeL": 0.5526
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-227454",
+      "reference_summary": "Shares of Hikma Pharmaceuticals PLC (OTCMKTS:HKMPY – Get Free Report) traded down 5.1% during mid-day trading on Monday . The company traded as low as $45.02 and last traded at $45.02. 427 shares were traded during mid-day trading, a decline of 61% from the a…",
+      "results": {
+        "zero-shot": {
+          "summary": "Shares of Hikma Pharmaceuticals PLC (OTCMKTS:HKMPY–Get Free Report) traded down 5. 1% during mid-day trading on Monday. The company traded as low as $45.",
+          "scores": {
+            "rouge1": 0.7105,
+            "rouge2": 0.7027,
+            "rougeL": 0.7105
+          }
+        },
+        "few-shot": {
+          "summary": "Shares of Hikma Pharmaceuticals PLC (OTCMKTS:HKMPY–Get Free Report) traded down 5. 1% during mid-day trading on Monday. The company traded as low as $45.",
+          "scores": {
+            "rouge1": 0.7105,
+            "rouge2": 0.7027,
+            "rougeL": 0.7105
+          }
+        },
+        "cot": {
+          "summary": "Shares of Hikma Pharmaceuticals PLC (OTCMKTS:HKMPY–Get Free Report) traded down 5. It operates through three segments: Injectables, Generics, and Branded. 1% during mid-day trading on Monday.",
+          "scores": {
+            "rouge1": 0.5385,
+            "rouge2": 0.4737,
+            "rougeL": 0.5128
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-423841",
+      "reference_summary": "New Delhi believes “self-reliance” is crucial for the developing world to stand up to powerful economies Read Full Article at RT.com",
+      "results": {
+        "zero-shot": {
+          "summary": "India’s foreign minister Subrahmanyam Jaishankar on Friday suggested that there “continues to be a resistance” against a greater role for the Global South in shaping solutions for key international issues. Jaishankar, in his remarks at the Foreign Ministers’ Session of the Voice of the Global South summit hosted by New Delhi, emphasized the need “to take everyone along, and everyone’s views along” during deliberations at multilateral and plurilateral forums. The minister further emphasized “self-reliance” to mitigate the Global South’s economic “vulnerabilities.",
+          "scores": {
+            "rouge1": 0.1667,
+            "rouge2": 0.0566,
+            "rougeL": 0.0926
+          }
+        },
+        "few-shot": {
+          "summary": "India’s foreign minister Subrahmanyam Jaishankar on Friday suggested that there “continues. Jaishankar, in his remarks at the Foreign Ministers’ Session of the. The minister further emphasized “self-reliance” to mitigate the Global South’s economic.",
+          "scores": {
+            "rouge1": 0.1695,
+            "rouge2": 0.0351,
+            "rougeL": 0.1017
+          }
+        },
+        "cot": {
+          "summary": "India’s foreign minister Subrahmanyam Jaishankar on Friday suggested that there “continues to be a. Where India Meets Russia – We are now on WhatsApp! ‎Follow and share RT. Jaishankar, in his remarks at the Foreign Ministers’ Session of the Voice of the.",
+          "scores": {
+            "rouge1": 0.1231,
+            "rouge2": 0.0,
+            "rougeL": 0.0615
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-277923",
+      "reference_summary": "\"Indian whisky is not much in demand outside, and domestic demand is robust, so the export opportunity hasn't been exploited to the fullest,\" said an official. In FY23, for instance, India's whisky exports at $124 million were just 10% higher than $112.4 mill…",
+      "results": {
+        "zero-shot": {
+          "summary": "IANS India's whiskies may be topping the tasting charts, but their exports are yet to take off with several factors holding up growth including robust domestic demand. Whisky exports in FY23 were just 10% higher in value from a decade ago while imports have surged nearly four times during this period. To be sure, whisky exports were 18% higher in the first five months of the current fiscal year from the corresponding period a year ago.",
+          "scores": {
+            "rouge1": 0.2927,
+            "rouge2": 0.1157,
+            "rougeL": 0.1301
+          }
+        },
+        "few-shot": {
+          "summary": "IANS India's whiskies may be topping the tasting charts, but their. Whisky exports in FY23 were just 10% higher in value from. To be sure, whisky exports were 18% higher in the first.",
+          "scores": {
+            "rouge1": 0.375,
+            "rouge2": 0.1538,
+            "rougeL": 0.2
+          }
+        },
+        "cot": {
+          "summary": "IANS India's whiskies may be topping the tasting charts, but their exports are yet. more less Recommended Stories Big bullion sale: Gold shines amid festive fireworks It's glass. Whisky exports in FY23 were just 10% higher in value from a decade ago.",
+          "scores": {
+            "rouge1": 0.2667,
+            "rouge2": 0.1364,
+            "rougeL": 0.1778
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-612463",
+      "reference_summary": "Redwire (NYSE:RDW – Get Free Report) and QinetiQ Group (OTCMKTS:QNTQF – Get Free Report) are both industrials companies, but which is the superior stock? We will compare the two businesses based on the strength of their risk, institutional ownership, earnings…",
+      "results": {
+        "zero-shot": {
+          "summary": "Redwire (NYSE:RDW–Get Free Report) and QinetiQ Group (OTCMKTS:QNTQF–Get Free Report) are both industrials companies, but which is the superior stock? We will compare the two businesses based on the strength of their risk, institutional ownership, earnings, dividends, analyst recommendations, valuation and profitability. This table compares Redwire and QinetiQ Group’s net margins, return on equity and return on assets. This is a summary of current ratings and price targets for Redwire and QinetiQ Group, as provided by MarketBeat.",
+          "scores": {
+            "rouge1": 0.6557,
+            "rouge2": 0.65,
+            "rougeL": 0.6557
+          }
+        },
+        "few-shot": {
+          "summary": "Redwire (NYSE:RDW–Get Free Report) and QinetiQ Group (OTCMKTS:QNTQF–Get Free Report) are. This table compares Redwire and QinetiQ Group’s net margins, return on. This is a summary of current ratings and price targets for.",
+          "scores": {
+            "rouge1": 0.4615,
+            "rouge2": 0.3684,
+            "rougeL": 0.4359
+          }
+        },
+        "cot": {
+          "summary": "Redwire (NYSE:RDW–Get Free Report) and QinetiQ Group (OTCMKTS:QNTQF–Get Free Report) are both industrials companies. The company was founded in 2001 and is based in Farnborough, the United Kingdom. This table compares Redwire and QinetiQ Group’s net margins, return on equity and return.",
+          "scores": {
+            "rouge1": 0.5287,
+            "rouge2": 0.4,
+            "rougeL": 0.4828
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-303045",
+      "reference_summary": "United Development Funding IV and UDF Income Fund V Announce Distributions for Q4 2023......",
+      "results": {
+        "zero-shot": {
+          "summary": "IRVING, Texas, Nov. 13, 2023 (GLOBE NEWSWIRE) -- United Development Funding IV (“UDF IV”) announced today that on November 9, 2023, its board of trustees authorized a cash distribution of $0. 065 per share payable on December 8, 2023, to shareholders of record at the close of business on December 1, 2023.",
+          "scores": {
+            "rouge1": 0.1846,
+            "rouge2": 0.0952,
+            "rougeL": 0.1846
+          }
+        },
+        "few-shot": {
+          "summary": "IRVING, Texas, Nov. 13, 2023 (GLOBE NEWSWIRE) -- United Development Funding IV (“UDF IV”). 065 per share payable on December 8, 2023, to shareholders of.",
+          "scores": {
+            "rouge1": 0.3158,
+            "rouge2": 0.1667,
+            "rougeL": 0.3158
+          }
+        },
+        "cot": {
+          "summary": "IRVING, Texas, Nov. com. 13, 2023 (GLOBE NEWSWIRE) -- United Development Funding IV (“UDF IV”) announced today that.",
+          "scores": {
+            "rouge1": 0.3871,
+            "rouge2": 0.2069,
+            "rougeL": 0.3226
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-67767",
+      "reference_summary": "Engine revving, Greek apple farmer Thymios Economou strains to drive a pickup truck through a rock-strewn dirt road and reach his flood-stricken orchard.",
+      "results": {
+        "zero-shot": {
+          "summary": "Engine revving, Greek apple farmer Thymios Economou strains to drive a pickup truck through a rock-strewn dirt road and reach his flood-stricken orchard. After a while, the vehicle becomes stuck. Economou points to the hillside above, 500 metres (yards) high, eaten into by Storm Daniel that struck central Greece this month.",
+          "scores": {
+            "rouge1": 0.641,
+            "rouge2": 0.6316,
+            "rougeL": 0.641
+          }
+        },
+        "few-shot": {
+          "summary": "Engine revving, Greek apple farmer Thymios Economou strains to drive a. After a while, the vehicle becomes stuck. Economou points to the hillside above, 500 metres (yards) high, eaten.",
+          "scores": {
+            "rouge1": 0.4444,
+            "rouge2": 0.3846,
+            "rougeL": 0.4444
+          }
+        },
+        "cot": {
+          "summary": "Engine revving, Greek apple farmer Thymios Economou strains to drive a pickup truck through. A massive blaze in the Dadia National Park in northeastern Greece that burned for. After a while, the vehicle becomes stuck.",
+          "scores": {
+            "rouge1": 0.5,
+            "rouge2": 0.4828,
+            "rougeL": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-722214",
+      "reference_summary": "COFACE SA announces the issuance of €300,000,000 tier 2 notes Paris, 27 November 2023 – 17.45 COFACE SA is announcing the issuance on 21 November 2023...",
+      "results": {
+        "zero-shot": {
+          "summary": "COFACE SA announces the issuance of €300,000,000 tier 2 notes Paris, 27 November 2023 – 17. 45 COFACE SA is announcing the issuance on 21 November 2023 of €300,000,000 tier 2 notes bearing a fixed interest rate of 5. 750 per cent.",
+          "scores": {
+            "rouge1": 0.7671,
+            "rouge2": 0.7606,
+            "rougeL": 0.7671
+          }
+        },
+        "few-shot": {
+          "summary": "COFACE SA announces the issuance of €300,000,000 tier 2 notes Paris. 45 COFACE SA is announcing the issuance on 21 November 2023. 750 per cent.",
+          "scores": {
+            "rouge1": 0.8727,
+            "rouge2": 0.8302,
+            "rougeL": 0.8727
+          }
+        },
+        "cot": {
+          "summary": "COFACE SA announces the issuance of €300,000,000 tier 2 notes Paris, 27 November 2023. Attachment. 45 COFACE SA is announcing the issuance on 21 November 2023 of €300,000,000 tier.",
+          "scores": {
+            "rouge1": 0.8852,
+            "rouge2": 0.8475,
+            "rougeL": 0.8852
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-337037",
+      "reference_summary": "Redfin Co. (NASDAQ:RDFN – Get Free Report)’s share price gapped up prior to trading on Tuesday . The stock had previously closed at $5.25, but opened at $5.66. Redfin shares last traded at $5.85, with a volume of 1,402,987 shares traded. Wall Street Analysts …",
+      "results": {
+        "zero-shot": {
+          "summary": "Redfin Co. (NASDAQ:RDFN–Get Free Report)’s share price gapped up prior to trading on Tuesday. The stock had previously closed at $5.",
+          "scores": {
+            "rouge1": 0.6575,
+            "rouge2": 0.6479,
+            "rougeL": 0.6575
+          }
+        },
+        "few-shot": {
+          "summary": "Redfin Co. (NASDAQ:RDFN–Get Free Report)’s share price gapped up prior to trading on. The stock had previously closed at $5.",
+          "scores": {
+            "rouge1": 0.6389,
+            "rouge2": 0.6,
+            "rougeL": 0.6389
+          }
+        },
+        "cot": {
+          "summary": "Redfin Co. It also provides title and settlement services; and originates and sells mortgages. (NASDAQ:RDFN–Get Free Report)’s share price gapped up prior to trading on Tuesday.",
+          "scores": {
+            "rouge1": 0.4359,
+            "rouge2": 0.3947,
+            "rougeL": 0.4359
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-510862",
+      "reference_summary": "Flagging off the train at Katra on Sunday, J&K Lieutenant Governor Manoj Sinha said the initiative would open a new chapter in the education sector of the Union Territory.",
+      "results": {
+        "zero-shot": {
+          "summary": "Jammu and Kashmir’s new College on Wheels rolled out of Katra railway station on Sunday with its first batch of 780 girls — all college students from different parts of the Union Territory. For many of them, it was their first train journey, and their first time venturing out of J&K. Travelling on a special train named JK Gyanodaya Express, they reached their first stop –Delhi– on Monday.",
+          "scores": {
+            "rouge1": 0.2424,
+            "rouge2": 0.1031,
+            "rougeL": 0.1414
+          }
+        },
+        "few-shot": {
+          "summary": "Jammu and Kashmir’s new College on Wheels rolled out of Katra. For many of them, it was their first train journey, and. Travelling on a special train named JK Gyanodaya Express, they reached.",
+          "scores": {
+            "rouge1": 0.1875,
+            "rouge2": 0.0,
+            "rougeL": 0.0938
+          }
+        },
+        "cot": {
+          "summary": "Jammu and Kashmir’s new College on Wheels rolled out of Katra railway station on. “There will be two charkhas on board and there will be a competition, the. For many of them, it was their first train journey, and their first time.",
+          "scores": {
+            "rouge1": 0.1918,
+            "rouge2": 0.0,
+            "rougeL": 0.137
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-666238",
+      "reference_summary": "​​The airline, which has a domestic market share of more than 62 per cent, is expanding its operations. It has a fleet of more than 330 aircraft, and 970 planes are on order.",
+      "results": {
+        "zero-shot": {
+          "summary": "Agencies IndiGo (File Photo) IndiGo on Thursday said it always evaluates available options amid reports that the budget carrier is likely to have a premium class in its flights. The airline, which has a domestic market share of more than 62 per cent, is expanding its operations. It has a fleet of more than 330 aircraft, and 970 planes are on order.",
+          "scores": {
+            "rouge1": 0.6947,
+            "rouge2": 0.6882,
+            "rougeL": 0.6947
+          }
+        },
+        "few-shot": {
+          "summary": "Agencies IndiGo (File Photo) IndiGo on Thursday said it always evaluates. The airline, which has a domestic market share of more than. It has a fleet of more than 330 aircraft, and 970.",
+          "scores": {
+            "rouge1": 0.697,
+            "rouge2": 0.625,
+            "rougeL": 0.6667
+          }
+        },
+        "cot": {
+          "summary": "Agencies IndiGo (File Photo) IndiGo on Thursday said it always evaluates available options amid. more less Recommended Stories RBI's vigilance: New consumer credit norms to bolster India's financial. The airline, which has a domestic market share of more than 62 per cent.",
+          "scores": {
+            "rouge1": 0.4416,
+            "rouge2": 0.3467,
+            "rougeL": 0.3636
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-103576",
+      "reference_summary": "MC Mining Limited (LON:MCM – Get Free Report)’s share price hit a new 52-week low during mid-day trading on Tuesday . The stock traded as low as GBX 6.71 ($0.08) and last traded at GBX 6.65 ($0.08), with a volume of 283006 shares. The stock had previously clo…",
+      "results": {
+        "zero-shot": {
+          "summary": "MC Mining Limited (LON:MCM–Get Free Report)’s share price hit a new 52-week low during mid-day trading on Tuesday. The stock traded as low as GBX 6. 71 ($0.",
+          "scores": {
+            "rouge1": 0.7586,
+            "rouge2": 0.7529,
+            "rougeL": 0.7586
+          }
+        },
+        "few-shot": {
+          "summary": "MC Mining Limited (LON:MCM–Get Free Report)’s share price hit a new. The stock traded as low as GBX 6. 71 ($0.",
+          "scores": {
+            "rouge1": 0.6154,
+            "rouge2": 0.5789,
+            "rougeL": 0.6154
+          }
+        },
+        "cot": {
+          "summary": "MC Mining Limited (LON:MCM–Get Free Report)’s share price hit a new 52-week low during. The company's principal projects include the Uitkomst Colliery, a metallurgical and thermal coal project. The stock traded as low as GBX 6.",
+          "scores": {
+            "rouge1": 0.6105,
+            "rouge2": 0.5161,
+            "rougeL": 0.5474
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-697797",
+      "reference_summary": "In a rally held in Toopran, Telangana, Prime Minister Narendra Modi expressed confidence on Sunday that the INDIA alliance would face defeat in Chhattisgarh, Madhya Pradesh, and Rajasthan, where Legislative Assembly polls have concluded. Reflecting on his cam…",
+      "results": {
+        "zero-shot": {
+          "summary": "IANS PM Narendra Modi The INDIA alliance will be wiped out in Chhattisgarh , Madhya Pradesh and Rajasthan where Legislative Assembly polls were completed, Prime Minister Narendra Modi said on Sunday. Addressing an election rally at Toopran in Telangana , he recalled his poll campaign in the three states where polling was over. \"I have seen in the three states that \"Indi alliance\" (INDIA alliance) will be wiped out.",
+          "scores": {
+            "rouge1": 0.5143,
+            "rouge2": 0.2913,
+            "rougeL": 0.3238
+          }
+        },
+        "few-shot": {
+          "summary": "IANS PM Narendra Modi The INDIA alliance will be wiped out. Addressing an election rally at Toopran in Telangana , he recalled. \"I have seen in the three states that \"Indi alliance\" (INDIA.",
+          "scores": {
+            "rouge1": 0.3429,
+            "rouge2": 0.0882,
+            "rougeL": 0.2
+          }
+        },
+        "cot": {
+          "summary": "IANS PM Narendra Modi The INDIA alliance will be wiped out in Chhattisgarh. Greentoons of the week 1 2 3 View all Stories. Addressing an election rally at Toopran in Telangana , he recalled his poll campaign.",
+          "scores": {
+            "rouge1": 0.3243,
+            "rouge2": 0.1111,
+            "rougeL": 0.2162
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-310377",
+      "reference_summary": "Koninklijke Ahold Delhaize (OTCMKTS:ADRNY – Get Free Report) saw a significant decrease in short interest in the month of October. As of October 31st, there was short interest totalling 25,000 shares, a decrease of 31.7% from the October 15th total of 36,600 …",
+      "results": {
+        "zero-shot": {
+          "summary": "Koninklijke Ahold Delhaize (OTCMKTS:ADRNY–Get Free Report) saw a significant decrease in short interest in the month of October. As of October 31st, there was short interest totalling 25,000 shares, a decrease of 31. 7% from the October 15th total of 36,600 shares.",
+          "scores": {
+            "rouge1": 0.989,
+            "rouge2": 0.9888,
+            "rougeL": 0.989
+          }
+        },
+        "few-shot": {
+          "summary": "Koninklijke Ahold Delhaize (OTCMKTS:ADRNY–Get Free Report) saw a significant decrease in. As of October 31st, there was short interest totalling 25,000 shares. 7% from the October 15th total of 36,600 shares.",
+          "scores": {
+            "rouge1": 0.85,
+            "rouge2": 0.7949,
+            "rougeL": 0.85
+          }
+        },
+        "cot": {
+          "summary": "Koninklijke Ahold Delhaize (OTCMKTS:ADRNY–Get Free Report) saw a significant decrease in short interest in. gasoline; and pharmacy products. As of October 31st, there was short interest totalling 25,000 shares, a decrease of.",
+          "scores": {
+            "rouge1": 0.775,
+            "rouge2": 0.7436,
+            "rougeL": 0.775
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-518972",
+      "reference_summary": "Gen Z workers at Goldman Sachs, Google, and beyond say RTO mandates aren't needed. They like working from the office, and here's why.",
+      "results": {
+        "zero-shot": {
+          "summary": "It seems like more and moreCEOs are calling their employees back to the office— and some Gen Z workers couldn't be more happy about it. We talked to Gen Z workers — defined as those born between 1997 and 2012 — who say they don't mind working in the office. In fact, they prefer it.",
+          "scores": {
+            "rouge1": 0.3,
+            "rouge2": 0.1026,
+            "rougeL": 0.225
+          }
+        },
+        "few-shot": {
+          "summary": "It seems like more and moreCEOs are calling their employees back. We talked to Gen Z workers — defined as those born. In fact, they prefer it.",
+          "scores": {
+            "rouge1": 0.2353,
+            "rouge2": 0.0816,
+            "rougeL": 0.1569
+          }
+        },
+        "cot": {
+          "summary": "It seems like more and moreCEOs are calling their employees back to the office—. For these Gen Z workers, the debate is settled. We talked to Gen Z workers — defined as those born between 1997 and.",
+          "scores": {
+            "rouge1": 0.2623,
+            "rouge2": 0.1017,
+            "rougeL": 0.1639
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-575387",
+      "reference_summary": "A total of 2,309 shares changed hands on the counter till 11:52AM (IST).",
+      "results": {
+        "zero-shot": {
+          "summary": "Shutterstock. com India 10-year bond yield jumped 0. 38 per cent to 6.",
+          "scores": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          }
+        },
+        "few-shot": {
+          "summary": "Shutterstock. com India 10-year bond yield jumped 0. 38 per cent to 6.",
+          "scores": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          }
+        },
+        "cot": {
+          "summary": "Shutterstock. 87% dividend yields and continuous dividend payments for 7 years 7 mins read Weekly. com India 10-year bond yield jumped 0.",
+          "scores": {
+            "rouge1": 0.0,
+            "rouge2": 0.0,
+            "rougeL": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-332936",
+      "reference_summary": "Ethiopian Airlines ordered 31 Boeing jets with an option for 36 more in a \"landmark\" deal on Tuesday as it joined the list of companies betting big on the growth of aviation.",
+      "results": {
+        "zero-shot": {
+          "summary": "Ethiopian Airlines ordered 31 Boeing jets with an option for 36 more in a \"landmark\" deal on Tuesday as it joined the list of companies betting big on the growth of aviation. The order, announced at the Dubai Airshow, was the biggest ever made by an African airline for Boeing aircraft, the US manufacturer said. The 11 787 Dreamliner and 20 737 MAX planes with a list price of more than $5.",
+          "scores": {
+            "rouge1": 0.6154,
+            "rouge2": 0.6078,
+            "rougeL": 0.6154
+          }
+        },
+        "few-shot": {
+          "summary": "Ethiopian Airlines ordered 31 Boeing jets with an option for 36. The order, announced at the Dubai Airshow, was the biggest ever. The 11 787 Dreamliner and 20 737 MAX planes with a.",
+          "scores": {
+            "rouge1": 0.4308,
+            "rouge2": 0.3175,
+            "rougeL": 0.4
+          }
+        },
+        "cot": {
+          "summary": "Ethiopian Airlines ordered 31 Boeing jets with an option for 36 more in a. 36 billion to power its existing order of 120 Airbus A320neo family aircraft, the. The order, announced at the Dubai Airshow, was the biggest ever made by an.",
+          "scores": {
+            "rouge1": 0.4595,
+            "rouge2": 0.3611,
+            "rougeL": 0.4324
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-652466",
+      "reference_summary": "Mumbai's luxury real estate boom premium home sales in Central Mumbai Bandra South Mumbai why Mumbai's luxury housing sales are shattering records",
+      "results": {
+        "zero-shot": {
+          "summary": "NEW DELHI: Mumbai's luxury property market, particularly in south and central areas, has experienced a remarkable decline in unsold inventory, reaching an unprecedented low in 15 years. Despite initial apprehension regarding excess inventory levels, the market has exhibited impressive growth since the outbreak of the pandemic. Why the decline in unsold inventory is happening currently:Increased demand for luxury homesPreference for ready propertiesPositive consumer sentimentLarge-ticket transactionsRecent data from Liases Foras Real Estate Rating & Research reveals that over the last 12 months, the market saw the sale of 722 apartments priced at Rs 10 crore and above, surpassing the 532 new launches.",
+          "scores": {
+            "rouge1": 0.1575,
+            "rouge2": 0.048,
+            "rougeL": 0.1102
+          }
+        },
+        "few-shot": {
+          "summary": "NEW DELHI: Mumbai's luxury property market, particularly in south and central. Despite initial apprehension regarding excess inventory levels, the market has exhibited. Why the decline in unsold inventory is happening currently:Increased demand for.",
+          "scores": {
+            "rouge1": 0.2373,
+            "rouge2": 0.0702,
+            "rougeL": 0.2034
+          }
+        },
+        "cot": {
+          "summary": "NEW DELHI: Mumbai's luxury property market, particularly in south and central areas, has experienced. While prices in ready and near-completion projects have increased, new launches have helped maintain. Despite initial apprehension regarding excess inventory levels, the market has exhibited impressive growth since.",
+          "scores": {
+            "rouge1": 0.1765,
+            "rouge2": 0.0606,
+            "rougeL": 0.1471
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-121116",
+      "reference_summary": "Lincoln National Corp boosted its position in shares of The Coca-Cola Company (NYSE:KO – Free Report) by 4.5% during the second quarter, according to the company in its most recent Form 13F filing with the SEC. The institutional investor owned 68,551 shares o…",
+      "results": {
+        "zero-shot": {
+          "summary": "Lincoln National Corp boosted its position in shares of The Coca-Cola Company (NYSE:KO–Free Report) by 4. 5% during the second quarter, according to the company in its most recent Form 13F filing with the SEC. The institutional investor owned 68,551 shares of the company’s stock after purchasing an additional 2,949 shares during the quarter.",
+          "scores": {
+            "rouge1": 0.8491,
+            "rouge2": 0.8462,
+            "rougeL": 0.8491
+          }
+        },
+        "few-shot": {
+          "summary": "Lincoln National Corp boosted its position in shares of The Coca-Cola. 5% during the second quarter, according to the company in its. The institutional investor owned 68,551 shares of the company’s stock after.",
+          "scores": {
+            "rouge1": 0.7805,
+            "rouge2": 0.675,
+            "rougeL": 0.7317
+          }
+        },
+        "cot": {
+          "summary": "Lincoln National Corp boosted its position in shares of The Coca-Cola Company (NYSE:KO–Free Report). It also offers beverage concentrates and syrups, as well as fountain syrups to fountain. 5% during the second quarter, according to the company in its most recent Form.",
+          "scores": {
+            "rouge1": 0.6813,
+            "rouge2": 0.6517,
+            "rougeL": 0.6813
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-24968",
+      "reference_summary": "Meta’s making a push for MR gaming with the Quest 3, but is it just a temporary fad?",
+      "results": {
+        "zero-shot": {
+          "summary": "It’s been a long time coming, but it looks like we're starting to see consumer VR truly thrive. There are so many different options available on the market now beyond just Meta and Sony. But where do we go from here? As VR continues to advance, mixing it with the real world is a logical next step in creating new and exciting virtual experiences.",
+          "scores": {
+            "rouge1": 0.2353,
+            "rouge2": 0.0241,
+            "rougeL": 0.1412
+          }
+        },
+        "few-shot": {
+          "summary": "It’s been a long time coming, but it looks like we're. There are so many different options available on the market now. But where do we go from here? As VR continues to.",
+          "scores": {
+            "rouge1": 0.1852,
+            "rouge2": 0.0,
+            "rougeL": 0.1481
+          }
+        },
+        "cot": {
+          "summary": "It’s been a long time coming, but it looks like we're starting to see. The mixed reality capabilities have so much potential to create unique experiences that no. There are so many different options available on the market now beyond just Meta.",
+          "scores": {
+            "rouge1": 0.2222,
+            "rouge2": 0.0,
+            "rougeL": 0.1587
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-496179",
+      "reference_summary": "Fighters from the Lebanese resistance movement Hezbollah have intercepted and shot down an Israeli unmanned aerial vehicle while it was hovering over an area in southern part of Lebanon close to the border between the Arab country and the 1948 Israeli-occupie…",
+      "results": {
+        "zero-shot": {
+          "summary": "Iran Press TV Saturday, 18 November 2023 8:40 AM Fighters from the Lebanese resistance movement Hezbollah have intercepted and shot down an Israeli unmanned aerial vehicle while it was hovering over an area in southern part of Lebanon close to the border between the Arab country and the 1948 Israeli-occupied territories. Hezbollah said in a brief statement carried by Lebanon's Arabic-language al-Manar television network that it downed an Israeli Elbit Hermes 450 unmanned aerial vehicle early on Saturday morning. The statement added the Israeli aircraft was brought down with a surface-to-air missile, and it fell in the Galilee Panhandle area in the northern sector of the Israeli-occupied lands.",
+          "scores": {
+            "rouge1": 0.519,
+            "rouge2": 0.5128,
+            "rougeL": 0.519
+          }
+        },
+        "few-shot": {
+          "summary": "Iran Press TV Saturday, 18 November 2023 8:40 AM Fighters from. Hezbollah said in a brief statement carried by Lebanon's Arabic-language al-Manar. The statement added the Israeli aircraft was brought down with a.",
+          "scores": {
+            "rouge1": 0.2532,
+            "rouge2": 0.026,
+            "rougeL": 0.2025
+          }
+        },
+        "cot": {
+          "summary": "Iran Press TV Saturday, 18 November 2023 8:40 AM Fighters from the Lebanese resistance. Nasrallah said the daily exchange of fire with Israeli forces along the Lebanese border. Hezbollah said in a brief statement carried by Lebanon's Arabic-language al-Manar television network that.",
+          "scores": {
+            "rouge1": 0.2955,
+            "rouge2": 0.093,
+            "rougeL": 0.1818
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-511841",
+      "reference_summary": "NEW YORK, Nov. 20, 2023 (GLOBE NEWSWIRE) -- Virtu Financial, Inc. (NASDAQ: VIRT) a leading provider of financial services and products that leverage cutting-edge technology to deliver innovative, transparent trading solutions to our clients and liquidity to t…",
+      "results": {
+        "zero-shot": {
+          "summary": "NEW YORK, Nov. 20, 2023 (GLOBE NEWSWIRE) -- Virtu Financial, Inc. (NASDAQ: VIRT) a leading provider of financial services and products that leverage cutting-edge technology to deliver innovative, transparent trading solutions to our clients and liquidity to the global markets, is pleased to congratulate Ashley Kryshtalsky and Kathryn Novak for being recognized at Markets Media’s Women in Finance Awards.",
+          "scores": {
+            "rouge1": 0.7551,
+            "rouge2": 0.75,
+            "rougeL": 0.7551
+          }
+        },
+        "few-shot": {
+          "summary": "NEW YORK, Nov. 20, 2023 (GLOBE NEWSWIRE) -- Virtu Financial, Inc. (NASDAQ: VIRT) a leading provider of financial services and products that.",
+          "scores": {
+            "rouge1": 0.7119,
+            "rouge2": 0.7018,
+            "rougeL": 0.7119
+          }
+        },
+        "cot": {
+          "summary": "NEW YORK, Nov. com. 20, 2023 (GLOBE NEWSWIRE) -- Virtu Financial, Inc.",
+          "scores": {
+            "rouge1": 0.4082,
+            "rouge2": 0.3404,
+            "rougeL": 0.4082
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-770903",
+      "reference_summary": "CAE (NYSE:CAE – Get Free Report) (TSE:CAE) was downgraded by equities researchers at Bank of America from a “neutral” rating to an “underperform” rating in a research report issued on Wednesday, MarketBeat reports. Other research analysts also recently issued…",
+      "results": {
+        "zero-shot": {
+          "summary": "CAE (NYSE:CAE–Get Free Report) (TSE:CAE)was downgraded by equities researchers atBank of Americafrom a “neutral” rating to an “underperform” rating in a research report issued on Wednesday,MarketBeatreports. Other research analysts also recently issued research reports about the company. TD Securities raised their price target on CAE from $37.",
+          "scores": {
+            "rouge1": 0.7826,
+            "rouge2": 0.6667,
+            "rougeL": 0.7391
+          }
+        },
+        "few-shot": {
+          "summary": "CAE (NYSE:CAE–Get Free Report) (TSE:CAE)was downgraded by equities researchers atBank of. Other research analysts also recently issued research reports about the company. TD Securities raised their price target on CAE from $37.",
+          "scores": {
+            "rouge1": 0.6316,
+            "rouge2": 0.4595,
+            "rougeL": 0.5263
+          }
+        },
+        "cot": {
+          "summary": "CAE (NYSE:CAE–Get Free Report) (TSE:CAE)was downgraded by equities researchers atBank of Americafrom a “neutral”. It operates through three segments: Civil Aviation, Defense and Security, and Healthcare. Other research analysts also recently issued research reports about the company.",
+          "scores": {
+            "rouge1": 0.5926,
+            "rouge2": 0.4557,
+            "rougeL": 0.5432
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-22058",
+      "reference_summary": "Since 2011, California has significantly reformed its criminal justice system, reducing the size of its prison population, with no effect on violent crime and only marginal impacts on property crime statewide. The COVID-19 pandemic furthered decarceration as …",
+      "results": {
+        "zero-shot": {
+          "summary": "Since 2011, California has significantly reformed its criminal justice system, reducing the size of its prison population, with no effect on violent crime and only marginal impacts on property crime statewide. The COVID-19 pandemic furthered decarceration as the state reduced state prison and jail populations to slow the spread of the virus. Concerns emerged that releases under the auspices of COVID mitigation harmedpublic safety.",
+          "scores": {
+            "rouge1": 0.7379,
+            "rouge2": 0.7327,
+            "rougeL": 0.7379
+          }
+        },
+        "few-shot": {
+          "summary": "Since 2011, California has significantly reformed its criminal justice system, reducing. The COVID-19 pandemic furthered decarceration as the state reduced state prison. Concerns emerged that releases under the auspices of COVID mitigation harmedpublic.",
+          "scores": {
+            "rouge1": 0.5833,
+            "rouge2": 0.4857,
+            "rougeL": 0.5
+          }
+        },
+        "cot": {
+          "summary": "Since 2011, California has significantly reformed its criminal justice system, reducing the size of. \". The COVID-19 pandemic furthered decarceration as the state reduced state prison and jail populations.",
+          "scores": {
+            "rouge1": 0.6866,
+            "rouge2": 0.5846,
+            "rougeL": 0.6269
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-403641",
+      "reference_summary": "ABU DHABI, UAE, Nov. 15, 2023 (GLOBE NEWSWIRE) -- Phoenix Group PLC, UAE's homegrown crypto powerhouse is set to list on the Abu Dhabi Securities Exchange. Co-founded by visionary blockchain and cryptocurrency veterans, Bijan Alizadehfard and Munaf Ali are …",
+      "results": {
+        "zero-shot": {
+          "summary": "ABU DHABI, UAE, Nov. 15, 2023 (GLOBE NEWSWIRE) --Phoenix GroupPLC, UAE's homegrown crypto powerhouse is set to list on the Abu Dhabi Securities Exchange. Co-founded by visionary blockchain and cryptocurrency veterans, Bijan Alizadehfard and Munaf Ali are excited to announce the region's first privately owned crypto and blockchain conglomerate listing in Abu Dhabi.",
+          "scores": {
+            "rouge1": 0.7917,
+            "rouge2": 0.766,
+            "rougeL": 0.7917
+          }
+        },
+        "few-shot": {
+          "summary": "ABU DHABI, UAE, Nov. 15, 2023 (GLOBE NEWSWIRE) --Phoenix GroupPLC, UAE's homegrown crypto powerhouse is. Co-founded by visionary blockchain and cryptocurrency veterans, Bijan Alizadehfard and Munaf.",
+          "scores": {
+            "rouge1": 0.7941,
+            "rouge2": 0.7273,
+            "rougeL": 0.7941
+          }
+        },
+        "cot": {
+          "summary": "ABU DHABI, UAE, Nov. com/press/ SOURCE: Phoenix Group PLC. 15, 2023 (GLOBE NEWSWIRE) --Phoenix GroupPLC, UAE's homegrown crypto powerhouse is set to list.",
+          "scores": {
+            "rouge1": 0.6154,
+            "rouge2": 0.5397,
+            "rougeL": 0.5538
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-573328",
+      "reference_summary": "HSBC is set to expand its China wealth business by increasing its headcount to 3,000 by 2025. The bank has already recruited 1,500 wealth managers in China since 2011 and plans to continue hiring despite the country's economic challenges. This expansion align…",
+      "results": {
+        "zero-shot": {
+          "summary": "HONG KONG: HSBC is on track to meet a target of expanding its China wealth business headcount to 3,000 by 2025, despite the country's current economic headwinds, as it bets on a steadily rising number of the extremely affluent, a senior executive said. The Asia-focused bank has recruited around 1,500 wealth managers in the world's second-largest economy since 2011, Trista Sun, HSBC China head of wealth and personal banking, told Reuters. The expansion of the China wealth advisory team serves HSBC's digital-focused \"Pinnacle\" strategy, part of a pivot towards Asia with $3.",
+          "scores": {
+            "rouge1": 0.4414,
+            "rouge2": 0.2517,
+            "rougeL": 0.3724
+          }
+        },
+        "few-shot": {
+          "summary": "HONG KONG: HSBC is on track to meet a target of. The Asia-focused bank has recruited around 1,500 wealth managers in the. The expansion of the China wealth advisory team serves HSBC's digital-focused.",
+          "scores": {
+            "rouge1": 0.4146,
+            "rouge2": 0.175,
+            "rougeL": 0.3415
+          }
+        },
+        "cot": {
+          "summary": "HONG KONG: HSBC is on track to meet a target of expanding its China. The London-headquartered bank has expanded its QDII offer with the acquisition of Citigroup's China. The Asia-focused bank has recruited around 1,500 wealth managers in the world's second-largest economy.",
+          "scores": {
+            "rouge1": 0.3871,
+            "rouge2": 0.1538,
+            "rougeL": 0.3656
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-773087",
+      "reference_summary": "Anglo American (LON:AAL – Get Free Report) had its price objective dropped by analysts at Berenberg Bank from GBX 2,500 ($31.58) to GBX 2,200 ($27.79) in a research report issued to clients and investors on Tuesday, Digital Look reports. The brokerage present…",
+      "results": {
+        "zero-shot": {
+          "summary": "Anglo American (LON:AAL–Get Free Report)had its price objective dropped by analysts at Berenberg Bank from GBX 2,500 ($31. 58) to GBX 2,200 ($27. 79) in a research report issued to clients and investors on Tuesday,Digital Lookreports.",
+          "scores": {
+            "rouge1": 0.9318,
+            "rouge2": 0.9302,
+            "rougeL": 0.9318
+          }
+        },
+        "few-shot": {
+          "summary": "Anglo American (LON:AAL–Get Free Report)had its price objective dropped by analysts. 58) to GBX 2,200 ($27. 79) in a research report issued to clients and investors on.",
+          "scores": {
+            "rouge1": 0.8052,
+            "rouge2": 0.7733,
+            "rougeL": 0.8052
+          }
+        },
+        "cot": {
+          "summary": "Anglo American (LON:AAL–Get Free Report)had its price objective dropped by analysts at Berenberg Bank. The company was founded in 1917 and is headquartered in London, the United Kingdom. 58) to GBX 2,200 ($27.",
+          "scores": {
+            "rouge1": 0.6265,
+            "rouge2": 0.5185,
+            "rougeL": 0.5542
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-47816",
+      "reference_summary": "MELBOURNE : Melbourne City manager Rado Vidosic has been sacked two games into the A-League season and replaced by Aurelio Vidmar.Vidosic, who took over from Patrick Kisnorbo a year ago, led the United Arab Emirates-controlled club into their fourth successiv…",
+      "results": {
+        "zero-shot": {
+          "summary": "MELBOURNE : Melbourne City manager Rado Vidosic has been sacked two games into the A-League season and replaced by Aurelio Vidmar. Vidosic, who took over from Patrick Kisnorbo a year ago, led the United Arab Emirates-controlled club into their fourth successive A-League championship match in June but they suffered a 6-1 humiliation by Central Coast Mariners. City, the sister club of Premier League giants Manchester City, were thrashed 6-0 by Adelaide United on Sunday following a 2-1 defeat in their season-opener against cross-town rivals Western United.",
+          "scores": {
+            "rouge1": 0.6074,
+            "rouge2": 0.6015,
+            "rougeL": 0.6074
+          }
+        },
+        "few-shot": {
+          "summary": "MELBOURNE : Melbourne City manager Rado Vidosic has been sacked two. Vidosic, who took over from Patrick Kisnorbo a year ago, led. City, the sister club of Premier League giants Manchester City, were.",
+          "scores": {
+            "rouge1": 0.6486,
+            "rouge2": 0.5278,
+            "rougeL": 0.6216
+          }
+        },
+        "cot": {
+          "summary": "MELBOURNE : Melbourne City manager Rado Vidosic has been sacked two games into the. Vidmar held onto his job and managed to take Adelaide into the 2009 Grand. Vidosic, who took over from Patrick Kisnorbo a year ago, led the United Arab.",
+          "scores": {
+            "rouge1": 0.7229,
+            "rouge2": 0.6173,
+            "rougeL": 0.6747
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-335814",
+      "reference_summary": "Dublin, Nov. 14, 2023 (GLOBE NEWSWIRE) -- The \"Fundamentals of The Texas ERCOT Electric Power Market\" training has been added to ResearchAndMarkets.com's offering.",
+      "results": {
+        "zero-shot": {
+          "summary": "Dublin, Nov. 14, 2023 (GLOBE NEWSWIRE) -- The\"Fundamentals of The Texas ERCOT Electric Power Market\"training has been added toResearchAndMarkets. com'soffering.",
+          "scores": {
+            "rouge1": 0.8696,
+            "rouge2": 0.8182,
+            "rougeL": 0.8696
+          }
+        },
+        "few-shot": {
+          "summary": "Dublin, Nov. 14, 2023 (GLOBE NEWSWIRE) -- The\"Fundamentals of The Texas ERCOT Electric. com'soffering.",
+          "scores": {
+            "rouge1": 0.7179,
+            "rouge2": 0.6486,
+            "rougeL": 0.7179
+          }
+        },
+        "cot": {
+          "summary": "Dublin, Nov. We provide you with the latest data on international and regional markets, key industries. 14, 2023 (GLOBE NEWSWIRE) -- The\"Fundamentals of The Texas ERCOT Electric Power Market\"training has.",
+          "scores": {
+            "rouge1": 0.6182,
+            "rouge2": 0.566,
+            "rougeL": 0.6182
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-174853",
+      "reference_summary": "According to traffic officials, directions were issued recently and will be implemented from Wednesday.",
+      "results": {
+        "zero-shot": {
+          "summary": "In view of the snowballing issue of pollution in Mumbai, the city traffic police have issued a directive to its lower rank, instructing the personnel to take strict legal action against vehicles violating norms set down to mitigate dust pollution. The authorities have also instructed that action be taken against vehicles without a fitness certificate and fine those whose pollution under control (PUC) certificates are not updated. According to traffic officials, directions were issued recently and will be implemented from Wednesday.",
+          "scores": {
+            "rouge1": 0.2947,
+            "rouge2": 0.2796,
+            "rougeL": 0.2947
+          }
+        },
+        "few-shot": {
+          "summary": "In view of the snowballing issue of pollution in Mumbai, the. The authorities have also instructed that action be taken against vehicles. According to traffic officials, directions were issued recently and will be.",
+          "scores": {
+            "rouge1": 0.4681,
+            "rouge2": 0.4444,
+            "rougeL": 0.4681
+          }
+        },
+        "cot": {
+          "summary": "In view of the snowballing issue of pollution in Mumbai, the city traffic police. As per the directives, vehicles that do not have a valid pollution under control. The authorities have also instructed that action be taken against vehicles without a fitness.",
+          "scores": {
+            "rouge1": 0.0714,
+            "rouge2": 0.0,
+            "rougeL": 0.0714
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-376591",
+      "reference_summary": "Flow Traders U.S. LLC lifted its stake in shares of ETFMG Prime Mobile Payments ETF (NYSEARCA:IPAY – Free Report) by 173.9% in the second quarter, according to the company in its most recent filing with the Securities and Exchange Commission. The firm owned 3…",
+      "results": {
+        "zero-shot": {
+          "summary": "Flow Traders U. S. LLC lifted its stake in shares of ETFMG Prime Mobile Payments ETF (NYSEARCA:IPAY–Free Report) by 173.",
+          "scores": {
+            "rouge1": 0.6471,
+            "rouge2": 0.6364,
+            "rougeL": 0.6471
+          }
+        },
+        "few-shot": {
+          "summary": "Flow Traders U. S. LLC lifted its stake in shares of ETFMG Prime Mobile Payments.",
+          "scores": {
+            "rouge1": 0.4918,
+            "rouge2": 0.4746,
+            "rougeL": 0.4918
+          }
+        },
+        "cot": {
+          "summary": "Flow Traders U. IPAY was launched on Jul 15, 2015 and is managed by ETF Managers Group. S.",
+          "scores": {
+            "rouge1": 0.25,
+            "rouge2": 0.0645,
+            "rougeL": 0.1562
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-675741",
+      "reference_summary": "HC Wainwright lowered shares of HIVE Digital Technologies (NASDAQ:HIVE – Free Report) from a buy rating to a neutral rating in a research note released on Monday morning, MarketBeat.com reports. They currently have $3.50 target price on the stock, down from t…",
+      "results": {
+        "zero-shot": {
+          "summary": "HC Wainwright lowered shares ofHIVE Digital Technologies (NASDAQ:HIVE–Free Report)from a buy rating to a neutral rating in a research note released on Monday morning,MarketBeat. comreports. They currently have $3.",
+          "scores": {
+            "rouge1": 0.8052,
+            "rouge2": 0.7467,
+            "rougeL": 0.8052
+          }
+        },
+        "few-shot": {
+          "summary": "HC Wainwright lowered shares ofHIVE Digital Technologies (NASDAQ:HIVE–Free Report)from a buy. comreports. They currently have $3.",
+          "scores": {
+            "rouge1": 0.5397,
+            "rouge2": 0.459,
+            "rougeL": 0.5397
+          }
+        },
+        "cot": {
+          "summary": "HC Wainwright lowered shares ofHIVE Digital Technologies (NASDAQ:HIVE–Free Report)from a buy rating to a. The company was formerly known as HIVE Blockchain Technologies Ltd. comreports.",
+          "scores": {
+            "rouge1": 0.5,
+            "rouge2": 0.4,
+            "rougeL": 0.4722
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-532252",
+      "reference_summary": "Delta Asset Management LLC TN grew its holdings in shares of The Kraft Heinz Company (NASDAQ:KHC – Free Report) by 124.6% during the 2nd quarter, according to its most recent Form 13F filing with the SEC. The firm owned 6,400 shares of the company’s stock aft…",
+      "results": {
+        "zero-shot": {
+          "summary": "Delta Asset Management LLC TN grew its holdings in shares of The Kraft Heinz Company (NASDAQ:KHC–Free Report) by 124. 6% during the 2nd quarter, according to its most recent Form 13F filing with the SEC. The firm owned 6,400 shares of the company’s stock after buying an additional 3,550 shares during the period.",
+          "scores": {
+            "rouge1": 0.8972,
+            "rouge2": 0.8952,
+            "rougeL": 0.8972
+          }
+        },
+        "few-shot": {
+          "summary": "Delta Asset Management LLC TN grew its holdings in shares of. 6% during the 2nd quarter, according to its most recent Form. The firm owned 6,400 shares of the company’s stock after buying.",
+          "scores": {
+            "rouge1": 0.7857,
+            "rouge2": 0.7317,
+            "rougeL": 0.7857
+          }
+        },
+        "cot": {
+          "summary": "Delta Asset Management LLC TN grew its holdings in shares of The Kraft Heinz. comto get the latest 13F filings and insider trades for The Kraft Heinz Company. 6% during the 2nd quarter, according to its most recent Form 13F filing with.",
+          "scores": {
+            "rouge1": 0.6813,
+            "rouge2": 0.6067,
+            "rougeL": 0.6374
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-380341",
+      "reference_summary": "Iran's permanent representative to the United Nations has warned against the threat posed by Israel to regional stability as the illegitimate regime maintains a policy of deliberate ambiguity regarding its nuclear weapons.",
+      "results": {
+        "zero-shot": {
+          "summary": "Iran Press TV Tuesday, 14 November 2023 7:31 AM Iran's permanent representative to the United Nations has warned against the threat posed by Israel to regional stability as the illegitimate regime maintains a policy of deliberate ambiguity regarding its nuclear weapons. Speaking at the fourth session of the Conference on the Establishment of a Middle East Zone Free of Nuclear and Other Weapons of Mass Destruction (WMDs), Amir Saeid Iravani said that the occupying regime's nuclear arsenal has sparked \"real and widespread concerns\" about proliferation. \"Recent nuclear threats by the Israeli regime's high-ranking officials against Iran and Palestine highlight the danger posed by these weapons at the hands of such an illegitimate regime,\" he added, referring to remarks by Israel's so-called heritage minister Amichai Eliyahu, who said that dropping a nuclear weapon on Gaza was \"one of the possibilities\" in the ongoing war on the besieged enclave.",
+          "scores": {
+            "rouge1": 0.3529,
+            "rouge2": 0.3459,
+            "rougeL": 0.3529
+          }
+        },
+        "few-shot": {
+          "summary": "Iran Press TV Tuesday, 14 November 2023 7:31 AM Iran's permanent. Speaking at the fourth session of the Conference on the Establishment. \"Recent nuclear threats by the Israeli regime's high-ranking officials against Iran.",
+          "scores": {
+            "rouge1": 0.3143,
+            "rouge2": 0.0588,
+            "rougeL": 0.2286
+          }
+        },
+        "cot": {
+          "summary": "Iran Press TV Tuesday, 14 November 2023 7:31 AM Iran's permanent representative to the. It has refused to either allow inspections of its nuclear facilities or sign the. Speaking at the fourth session of the Conference on the Establishment of a Middle.",
+          "scores": {
+            "rouge1": 0.3636,
+            "rouge2": 0.16,
+            "rougeL": 0.2857
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-677579",
+      "reference_summary": "Norwegian Deputy Foreign Minister hails the bilateral relationship with India, emphasizing its importance in addressing global issues such as climate change and multilateralism. The minister sees India as a vital partner and is committed to further strengthen…",
+      "results": {
+        "zero-shot": {
+          "summary": "NEW DELHI: Norwegian Deputy Foreign Minister Andreas Motzfeldt Kravik on Thursday hailed the bilateral relationship with India and said that he sees the world's largest democracy as 'fundamental' to progress in the most important issues. He underlined, that to find any global solution to any international issue without India being part of that solution, is \"impossible. \"\"We see India as fundamental in order to progress the most important issues of our time, namely, of combating climate change, extending multilateralism, finding solutions which are anchored in international law.",
+          "scores": {
+            "rouge1": 0.368,
+            "rouge2": 0.1463,
+            "rougeL": 0.24
+          }
+        },
+        "few-shot": {
+          "summary": "NEW DELHI: Norwegian Deputy Foreign Minister Andreas Motzfeldt Kravik on Thursday. He underlined, that to find any global solution to any international. \"\"We see India as fundamental in order to progress the most.",
+          "scores": {
+            "rouge1": 0.2857,
+            "rouge2": 0.1176,
+            "rougeL": 0.2286
+          }
+        },
+        "cot": {
+          "summary": "NEW DELHI: Norwegian Deputy Foreign Minister Andreas Motzfeldt Kravik on Thursday hailed the bilateral. And that's also one of the reasons why we're prioritizing meetings such as this. He underlined, that to find any global solution to any international issue without India.",
+          "scores": {
+            "rouge1": 0.321,
+            "rouge2": 0.1266,
+            "rougeL": 0.2469
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-590666",
+      "reference_summary": "The IKAZZ product collection features a diverse product line, including puffers, parkas, wools, lightweight jackets, and anoraks.......",
+      "results": {
+        "zero-shot": {
+          "summary": "HANGZHOU, China, Nov. 21, 2023 (GLOBE NEWSWIRE) -- IKAZZ, a distinguished women's winter coat brand, is set to redefine the world of winter fashion with its wide range of statement winter coats. Known for its commitment to cruelty-free practices and cutting-edge designs, IKAZZ is unveiling a collection that embraces style and revolutionizes the warmth and comfort experienced by women during winter.",
+          "scores": {
+            "rouge1": 0.125,
+            "rouge2": 0.0,
+            "rougeL": 0.1
+          }
+        },
+        "few-shot": {
+          "summary": "HANGZHOU, China, Nov. 21, 2023 (GLOBE NEWSWIRE) -- IKAZZ, a distinguished women's winter coat. Known for its commitment to cruelty-free practices and cutting-edge designs, IKAZZ.",
+          "scores": {
+            "rouge1": 0.1364,
+            "rouge2": 0.0,
+            "rougeL": 0.1364
+          }
+        },
+        "cot": {
+          "summary": "HANGZHOU, China, Nov. com/NewsRoom/AttachmentNg/e060011b-18c6-4d6f-b8a4-33976c108df9. 21, 2023 (GLOBE NEWSWIRE) -- IKAZZ, a distinguished women's winter coat brand, is set.",
+          "scores": {
+            "rouge1": 0.0952,
+            "rouge2": 0.0,
+            "rougeL": 0.0952
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-406094",
+      "reference_summary": "Retail printers and consumables thrive across diverse markets, powered by efficient labeling. This tech-retail synergy shapes the future with innovative labeling, essential for evolving store, online, and warehouse needs. Retail printers and consumables thriv…",
+      "results": {
+        "zero-shot": {
+          "summary": "NEWARK, Del, Nov. 16, 2023 (GLOBE NEWSWIRE) -- According to a Future Market Insights (FMI) report, theretail printers and consumables marketis forecasted to experience a growth of4. 5% CAGRover the estimated period, as per FMI’s analysis.",
+          "scores": {
+            "rouge1": 0.1408,
+            "rouge2": 0.058,
+            "rougeL": 0.1127
+          }
+        },
+        "few-shot": {
+          "summary": "NEWARK, Del, Nov. 16, 2023 (GLOBE NEWSWIRE) -- According to a Future Market Insights. 5% CAGRover the estimated period, as per FMI’s analysis.",
+          "scores": {
+            "rouge1": 0.069,
+            "rouge2": 0.0,
+            "rougeL": 0.0345
+          }
+        },
+        "cot": {
+          "summary": "NEWARK, Del, Nov. comLinkedIn|Twitter|Blogs|YouTube. 16, 2023 (GLOBE NEWSWIRE) -- According to a Future Market Insights (FMI) report, theretail.",
+          "scores": {
+            "rouge1": 0.0364,
+            "rouge2": 0.0,
+            "rougeL": 0.0364
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-43843",
+      "reference_summary": "Nigel Hunt loses his university role after saying Welsh road signs are \"potentially dangerous\".",
+      "results": {
+        "zero-shot": {
+          "summary": "A professor has lost a university role after he described the use of the Welsh language on road signs as \"potentially dangerous\". Nigel Hunt, a visiting psychology professor at Wrexham University posted the comments on social media. He said he got a letter from the university's vice chancellor, dismissing him from the honorary position.",
+          "scores": {
+            "rouge1": 0.2899,
+            "rouge2": 0.1493,
+            "rougeL": 0.2319
+          }
+        },
+        "few-shot": {
+          "summary": "A professor has lost a university role after he described the. Nigel Hunt, a visiting psychology professor at Wrexham University posted the. He said he got a letter from the university's vice chancellor.",
+          "scores": {
+            "rouge1": 0.2083,
+            "rouge2": 0.1304,
+            "rougeL": 0.125
+          }
+        },
+        "cot": {
+          "summary": "A professor has lost a university role after he described the use of the. \". Nigel Hunt, a visiting psychology professor at Wrexham University posted the comments on social.",
+          "scores": {
+            "rouge1": 0.2381,
+            "rouge2": 0.15,
+            "rougeL": 0.1429
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-444956",
+      "reference_summary": "Pan American Silver (TSE:PAAS – Free Report) had its target price cut by Royal Bank of Canada from C$24.00 to C$20.00 in a research note published on Monday morning, BayStreet.CA reports. They currently have an outperform rating on the stock. A number of othe…",
+      "results": {
+        "zero-shot": {
+          "summary": "Pan American Silver (TSE:PAAS–Free Report)had its target price cut by Royal Bank of Canada from C$24. 00 to C$20. 00 in a research note published on Monday morning,BayStreet.",
+          "scores": {
+            "rouge1": 0.8193,
+            "rouge2": 0.8148,
+            "rougeL": 0.8193
+          }
+        },
+        "few-shot": {
+          "summary": "Pan American Silver (TSE:PAAS–Free Report)had its target price cut by Royal. 00 to C$20. 00 in a research note published on Monday morning,BayStreet.",
+          "scores": {
+            "rouge1": 0.7273,
+            "rouge2": 0.6933,
+            "rougeL": 0.7273
+          }
+        },
+        "cot": {
+          "summary": "Pan American Silver (TSE:PAAS–Free Report)had its target price cut by Royal Bank of Canada. It holds interests in the La Colorada, Dolores, Huaron, Morococha, Shahuindo, La Arena, Timmins. 00 to C$20.",
+          "scores": {
+            "rouge1": 0.5476,
+            "rouge2": 0.4634,
+            "rougeL": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-104291",
+      "reference_summary": "Company invites individual and institutional investors, as well as advisors, to attend interactive, real-time virtual event Company invites individual and institutional investors, as well as advisors, to attend interactive, real-time virtual event",
+      "results": {
+        "zero-shot": {
+          "summary": "PERTH, Australia, Nov. 02, 2023 (GLOBE NEWSWIRE) -- European Metals Holding Limited (ASX & LON: EMH, OTCQX: ERPNF, ADS:EMHXY) based in Perth, and focused on the development of the Cinovec Lithium Project in the Czech Republic, today announced that Keith Coughlan, Executive Chairman will present at the dbVIC - Deutsche Bank American Depositary Receipt (ADR) Virtual Investor Conference on November 8th, 2023. This virtual investor conference is aimed exclusively at introducing global companies with ADR programs to investors.",
+          "scores": {
+            "rouge1": 0.0909,
+            "rouge2": 0.0,
+            "rougeL": 0.0545
+          }
+        },
+        "few-shot": {
+          "summary": "PERTH, Australia, Nov. 02, 2023 (GLOBE NEWSWIRE) -- European Metals Holding Limited (ASX &. This virtual investor conference is aimed exclusively at introducing global companies.",
+          "scores": {
+            "rouge1": 0.0351,
+            "rouge2": 0.0,
+            "rougeL": 0.0351
+          }
+        },
+        "cot": {
+          "summary": "PERTH, Australia, Nov. Accelerating the next level of investor engagement, Virtual Investor Conferences delivers leading investor communications. 02, 2023 (GLOBE NEWSWIRE) -- European Metals Holding Limited (ASX & LON: EMH, OTCQX.",
+          "scores": {
+            "rouge1": 0.0317,
+            "rouge2": 0.0,
+            "rougeL": 0.0317
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-156395",
+      "reference_summary": "Civista Bancshares, Inc. (NASDAQ:CIVB – Get Free Report) Director Gerald B. Wurm purchased 750 shares of Civista Bancshares stock in a transaction on Wednesday, November 1st. The stock was acquired at an average cost of $14.36 per share, for a total transacti…",
+      "results": {
+        "zero-shot": {
+          "summary": "Civista Bancshares, Inc. (NASDAQ:CIVB–Get Free Report) Director Gerald B. Wurm purchased 750 shares of Civista Bancshares stock in a transaction on Wednesday, November 1st.",
+          "scores": {
+            "rouge1": 0.7536,
+            "rouge2": 0.7463,
+            "rougeL": 0.7536
+          }
+        },
+        "few-shot": {
+          "summary": "Civista Bancshares, Inc. (NASDAQ:CIVB–Get Free Report) Director Gerald B. Wurm purchased 750 shares of Civista Bancshares stock in a transaction.",
+          "scores": {
+            "rouge1": 0.6769,
+            "rouge2": 0.6667,
+            "rougeL": 0.6769
+          }
+        },
+        "cot": {
+          "summary": "Civista Bancshares, Inc. It collects a range of customer deposits; and offers commercial and agriculture, commercial and. (NASDAQ:CIVB–Get Free Report) Director Gerald B.",
+          "scores": {
+            "rouge1": 0.3824,
+            "rouge2": 0.2727,
+            "rougeL": 0.3235
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-121113",
+      "reference_summary": "Vista Outdoor (NYSE:VSTO – Get Free Report) issued its quarterly earnings data on Wednesday. The company reported $0.96 EPS for the quarter, missing analysts’ consensus estimates of $0.99 by ($0.03), Briefing.com reports. The company had revenue of $676.80 mi…",
+      "results": {
+        "zero-shot": {
+          "summary": "Vista Outdoor (NYSE:VSTO–Get Free Report) issued its quarterly earnings data on Wednesday. The company reported $0. 96 EPS for the quarter, missing analysts’ consensus estimates of $0.",
+          "scores": {
+            "rouge1": 0.7945,
+            "rouge2": 0.7887,
+            "rougeL": 0.7945
+          }
+        },
+        "few-shot": {
+          "summary": "Vista Outdoor (NYSE:VSTO–Get Free Report) issued its quarterly earnings data on. The company reported $0. 96 EPS for the quarter, missing analysts’ consensus estimates of $0.",
+          "scores": {
+            "rouge1": 0.7778,
+            "rouge2": 0.7429,
+            "rougeL": 0.7778
+          }
+        },
+        "cot": {
+          "summary": "Vista Outdoor (NYSE:VSTO–Get Free Report) issued its quarterly earnings data on Wednesday. The Sporting Products segment designs, develops, manufactures, and distributes ammunitions, components, and related equipment. The company reported $0.",
+          "scores": {
+            "rouge1": 0.5,
+            "rouge2": 0.4595,
+            "rougeL": 0.4737
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-94419",
+      "reference_summary": "Lots of love for Paul Reubens and his unforgettable character Pee-wee Herman at Muertos Fest this weekend, where artists and fans alike celebrated with five different Dia de los Muertos ofrendas in his honor. Fittingly, the event took place deep in the heart …",
+      "results": {
+        "zero-shot": {
+          "summary": "Lots of love for Paul Reubens and his unforgettable character Pee-wee Herman atMuertos Festthis weekend, where artists and fans alike celebrated withfive differentDia de los Muertos ofrendas in his honor. Fittingly, the event took place deep in the heart of Texas (clap, clap, clap, clap), just a short drive to the historic Alamo (and its basement). Pee-wee fan Michael Gonzales captured these photos of artist Hamilton's incredible altar.",
+          "scores": {
+            "rouge1": 0.6261,
+            "rouge2": 0.5841,
+            "rougeL": 0.6261
+          }
+        },
+        "few-shot": {
+          "summary": "Lots of love for Paul Reubens and his unforgettable character Pee-wee. Fittingly, the event took place deep in the heart of Texas. Pee-wee fan Michael Gonzales captured these photos of artist Hamilton's incredible.",
+          "scores": {
+            "rouge1": 0.525,
+            "rouge2": 0.4872,
+            "rougeL": 0.525
+          }
+        },
+        "cot": {
+          "summary": "Lots of love for Paul Reubens and his unforgettable character Pee-wee Herman atMuertos Festthis. ly/PeeweeForever A post shared by Pee-wee Herman (@peeweeherman) (Pee-wee Herman). Fittingly, the event took place deep in the heart of Texas (clap, clap, clap.",
+          "scores": {
+            "rouge1": 0.5116,
+            "rouge2": 0.4762,
+            "rougeL": 0.5116
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-472848",
+      "reference_summary": "First Commonwealth Financial Corp PA boosted its position in Microchip Technology Incorporated (NASDAQ:MCHP – Free Report) by 8.7% in the 2nd quarter, according to its most recent filing with the Securities and Exchange Commission (SEC). The firm owned 7,328 …",
+      "results": {
+        "zero-shot": {
+          "summary": "First Commonwealth Financial Corp PA boosted its position in Microchip Technology Incorporated (NASDAQ:MCHP–Free Report) by 8. 7% in the 2nd quarter, according to its most recent filing with the Securities and Exchange Commission (SEC). The firm owned 7,328 shares of the semiconductor company’s stock after purchasing an additional 585 shares during the quarter.",
+          "scores": {
+            "rouge1": 0.8367,
+            "rouge2": 0.8333,
+            "rougeL": 0.8367
+          }
+        },
+        "few-shot": {
+          "summary": "First Commonwealth Financial Corp PA boosted its position in Microchip Technology. 7% in the 2nd quarter, according to its most recent filing. The firm owned 7,328 shares of the semiconductor company’s stock after.",
+          "scores": {
+            "rouge1": 0.7368,
+            "rouge2": 0.6486,
+            "rougeL": 0.7105
+          }
+        },
+        "cot": {
+          "summary": "First Commonwealth Financial Corp PA boosted its position in Microchip Technology Incorporated (NASDAQ:MCHP–Free Report). comto get the latest 13F filings and insider trades for Microchip Technology Incorporated (NASDAQ:MCHP–Free. 7% in the 2nd quarter, according to its most recent filing with the Securities.",
+          "scores": {
+            "rouge1": 0.7356,
+            "rouge2": 0.6588,
+            "rougeL": 0.6897
+          }
+        }
+      }
+    },
+    {
+      "id": "kaggle-79167",
+      "reference_summary": "(marketscreener.com) TR-1: Standard form for notification of major holdings 1. Issuer Details ISIN GB0001738615 Issuer Name CAPITAL GEARING TRUST P.L.C. UK or Non-UK Issuer Non-UK 2. Reason for Notification An acquisition or disposal of voting rights 3. Det…",
+      "results": {
+        "zero-shot": {
+          "summary": "TR-1: Standard form for notification of major holdings 1. Issuer Details ISIN GB0001738615 Issuer Name CAPITAL GEARING TRUST P. L.",
+          "scores": {
+            "rouge1": 0.6462,
+            "rouge2": 0.6349,
+            "rougeL": 0.6462
+          }
+        },
+        "few-shot": {
+          "summary": "TR-1: Standard form for notification of major holdings 1. Issuer Details ISIN GB0001738615 Issuer Name CAPITAL GEARING TRUST P. L.",
+          "scores": {
+            "rouge1": 0.6462,
+            "rouge2": 0.6349,
+            "rougeL": 0.6462
+          }
+        },
+        "cot": {
+          "summary": "TR-1: Standard form for notification of major holdings 1. Place Of Completion Bendern. Issuer Details ISIN GB0001738615 Issuer Name CAPITAL GEARING TRUST P.",
+          "scores": {
+            "rouge1": 0.6176,
+            "rouge2": 0.5455,
+            "rougeL": 0.5882
+          }
+        }
+      }
+    }
+  ]
+}

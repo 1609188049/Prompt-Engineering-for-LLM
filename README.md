@@ -26,6 +26,7 @@ The codebase supports:
 ├── prompts.py
 ├── evaluate.py
 ├── run_experiments.py
+├── prepare_kaggle_dataset.py
 ├── plot_results.py
 ├── api.py
 ├── example_dataset.json
@@ -118,17 +119,84 @@ Request body:
 
 ## Backends
 
-Two backends are supported:
+Five backends are supported:
 
 - `mock`: deterministic local summary generation for testing the pipeline and API
 - `openai`: real LLM generation using `OPENAI_API_KEY`
+- `gemini`: real LLM generation using `GEMINI_API_KEY`
+- `deepseek`: real LLM generation using `DEEPSEEK_API_KEY`
+- `claude`: real LLM generation using `ANTHROPIC_API_KEY`
 
-To use the OpenAI backend:
+To use a real-model backend:
 
 ```bash
 export OPENAI_API_KEY=your_key_here
-python3 run_experiments.py --backend openai
+python3 run_experiments.py --backend openai --model gpt-4.1-mini
+
+export GEMINI_API_KEY=your_key_here
+python3 run_experiments.py --backend gemini --model gemini-2.5-flash
+
+export DEEPSEEK_API_KEY=your_key_here
+python3 run_experiments.py --backend deepseek --model deepseek-chat
+
+export ANTHROPIC_API_KEY=your_key_here
+python3 run_experiments.py --backend claude --model claude-3-5-sonnet-latest
 ```
+
+Notes:
+
+- The `claude` backend uses Anthropic's OpenAI SDK compatibility layer.
+- The `deepseek` backend uses DeepSeek's OpenAI-compatible API.
+- You can reduce API usage by limiting prompt modes, for example: `--modes zero-shot few-shot`
+
+## Kaggle Dataset Workflow
+
+To reproduce the Kaggle-based experiment sample used in this repository:
+
+```bash
+python3 prepare_kaggle_dataset.py \
+  --output result/kaggle_sample_dataset.json \
+  --sample-size 24
+
+python3 run_experiments.py \
+  --dataset result/kaggle_sample_dataset.json \
+  --output result/kaggle_mock_results.json \
+  --backend mock \
+  --modes zero-shot few-shot cot
+
+MPLCONFIGDIR=/tmp/matplotlib python3 plot_results.py \
+  --results result/kaggle_mock_results.json \
+  --output-dir result/charts
+```
+
+Notes:
+
+- The Kaggle sample script uses `description` as a weak reference summary proxy.
+- The sample is filtered toward English-language records with longer article bodies.
+- By default, each run randomly samples 24 articles and records the generated seed in the output metadata.
+- You can optionally add `--max-per-source N` if you want a stricter source-balance constraint.
+- `24 articles x 3 modes = 72 model calls`, which is usually a good tradeoff between cost and a still-readable comparison.
+
+### Lower-Cost Real-Model Run
+
+If you want a cheaper first pass before running the full 3-mode comparison:
+
+```bash
+export GEMINI_API_KEY=your_key_here
+
+python3 prepare_kaggle_dataset.py \
+  --output result/kaggle_sample_dataset.json \
+  --sample-size 24
+
+python3 run_experiments.py \
+  --dataset result/kaggle_sample_dataset.json \
+  --output result/kaggle_gemini_results.json \
+  --backend gemini \
+  --model gemini-2.5-flash \
+  --modes zero-shot few-shot
+```
+
+This 2-mode run makes only `48` API calls and is a good budget-friendly smoke test before running all three prompt strategies.
 
 ## Example Research Workflow
 

@@ -18,6 +18,14 @@ class SummaryRequest:
     backend: str = "mock"
 
 
+OPENAI_COMPATIBLE_BACKENDS = {"openai", "deepseek", "claude"}
+BACKEND_CHOICES = ("mock", "openai", "gemini", "deepseek", "claude")
+
+
+def normalize_text_output(text: str) -> str:
+    return text.strip()
+
+
 def split_sentences(text: str) -> list[str]:
     chunks = [part.strip() for part in text.replace("\n", " ").split(".")]
     return [chunk for chunk in chunks if chunk]
@@ -53,30 +61,73 @@ def mock_generate_summary(article: str, mode: str, target_sentences: int = 3) ->
     return ". ".join(item.rstrip(". ") for item in selected if item).strip() + "."
 
 
-def openai_generate_summary(prompt: str, model: str) -> str:
+def openai_compatible_generate_summary(prompt: str, model: str, backend: str) -> str:
     try:
         from openai import OpenAI
     except ImportError as exc:
         raise RuntimeError("OpenAI package is not installed. Run `pip install -r requirements.txt`.") from exc
 
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is not set.")
+    if backend == "openai":
+        api_key = os.getenv("OPENAI_API_KEY")
+        base_url = None
+    elif backend == "deepseek":
+        api_key = os.getenv("DEEPSEEK_API_KEY")
+        base_url = "https://api.deepseek.com"
+    elif backend == "claude":
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        base_url = "https://api.anthropic.com/v1/"
+    else:
+        raise ValueError(f"Unsupported OpenAI-compatible backend: {backend}")
 
-    client = OpenAI(api_key=api_key)
+    if not api_key:
+        env_var = {
+            "openai": "OPENAI_API_KEY",
+            "deepseek": "DEEPSEEK_API_KEY",
+            "claude": "ANTHROPIC_API_KEY",
+        }[backend]
+        raise RuntimeError(f"{env_var} is not set.")
+
+    client = OpenAI(api_key=api_key, base_url=base_url)
+    if backend == "claude":
+        response = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return normalize_text_output(response.choices[0].message.content or "")
+
     response = client.responses.create(
         model=model,
         input=prompt,
     )
-    return response.output_text.strip()
+    return normalize_text_output(response.output_text)
+
+
+def gemini_generate_summary(prompt: str, model: str) -> str:
+    try:
+        from google import genai
+    except ImportError as exc:
+        raise RuntimeError("google-genai is not installed. Run `pip install -r requirements.txt`.") from exc
+
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError("GEMINI_API_KEY is not set.")
+
+    client = genai.Client(api_key=api_key)
+    response = client.models.generate_content(
+        model=model,
+        contents=prompt,
+    )
+    return normalize_text_output(response.text or "")
 
 
 def generate_summary(request: SummaryRequest, model: str = "gpt-4.1-mini") -> dict[str, str]:
     prompt = build_prompt(request.mode, request.article, request.target_sentences)
     if request.backend == "mock":
         summary = mock_generate_summary(request.article, request.mode, request.target_sentences)
-    elif request.backend == "openai":
-        summary = openai_generate_summary(prompt, model=model)
+    elif request.backend in OPENAI_COMPATIBLE_BACKENDS:
+        summary = openai_compatible_generate_summary(prompt, model=model, backend=request.backend)
+    elif request.backend == "gemini":
+        summary = gemini_generate_summary(prompt, model=model)
     else:
         raise ValueError(f"Unsupported backend: {request.backend}")
 
@@ -90,7 +141,10 @@ def generate_summary(request: SummaryRequest, model: str = "gpt-4.1-mini") -> di
 
 def load_dataset(dataset_path: Path) -> list[dict[str, str]]:
     with dataset_path.open("r", encoding="utf-8") as handle:
-        return json.load(handle)
+        payload = json.load(handle)
+    if isinstance(payload, dict) and "records" in payload:
+        return payload["records"]
+    return payload
 
 
 def run_experiment(
@@ -99,10 +153,11 @@ def run_experiment(
     backend: str,
     target_sentences: int,
     model: str,
+    modes: tuple[str, ...],
 ) -> dict:
     dataset = load_dataset(dataset_path)
     records = []
-    mode_scores: dict[str, list[dict[str, float]]] = {mode: [] for mode in SUPPORTED_MODES}
+    mode_scores: dict[str, list[dict[str, float]]] = {mode: [] for mode in modes}
 
     for item in dataset:
         article_id = item["id"]
@@ -110,7 +165,7 @@ def run_experiment(
         reference = item["reference_summary"]
         mode_outputs = {}
 
-        for mode in SUPPORTED_MODES:
+        for mode in modes:
             response = generate_summary(
                 SummaryRequest(
                     article=article,
@@ -141,8 +196,9 @@ def run_experiment(
             "dataset": str(dataset_path),
             "backend": backend,
             "target_sentences": target_sentences,
-            "model": model if backend == "openai" else "mock-summarizer",
+            "model": model if backend != "mock" else "mock-summarizer",
             "num_articles": len(dataset),
+            "modes": list(modes),
         },
         "aggregate_scores": aggregate,
         "articles": records,
@@ -158,9 +214,16 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run summarization prompt experiments.")
     parser.add_argument("--dataset", default="example_dataset.json", help="Path to dataset JSON file.")
     parser.add_argument("--output", default="results.json", help="Path to output JSON file.")
-    parser.add_argument("--backend", default="mock", choices=["mock", "openai"], help="Summary backend.")
+    parser.add_argument("--backend", default="mock", choices=BACKEND_CHOICES, help="Summary backend.")
     parser.add_argument("--target-sentences", type=int, default=3, help="Desired summary length.")
-    parser.add_argument("--model", default="gpt-4.1-mini", help="OpenAI model for generation.")
+    parser.add_argument("--model", default="gpt-4.1-mini", help="Model name for the selected backend.")
+    parser.add_argument(
+        "--modes",
+        nargs="+",
+        choices=SUPPORTED_MODES,
+        default=list(SUPPORTED_MODES),
+        help="Prompt modes to evaluate. Fewer modes reduce API calls.",
+    )
     return parser.parse_args()
 
 
@@ -172,6 +235,7 @@ def main() -> None:
         backend=args.backend,
         target_sentences=args.target_sentences,
         model=args.model,
+        modes=tuple(args.modes),
     )
     print(json.dumps(result["aggregate_scores"], indent=2))
 
