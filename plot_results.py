@@ -10,7 +10,13 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-METRICS = ("rouge1", "rouge2", "rougeL")
+METRICS = (
+    "bertscore_f1",
+    "novel_2gram_ratio",
+    "compression_ratio",
+    "grounding_score",
+    "rule_based_quality",
+)
 
 
 def load_results(path: Path) -> dict:
@@ -44,7 +50,7 @@ def save_bar_chart(metric: str, aggregate_scores: dict[str, dict[str, float]], o
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Plot ROUGE results from a JSON file.")
+    parser = argparse.ArgumentParser(description="Plot evaluation results from a JSON file.")
     parser.add_argument("--results", default="sample_results.json", help="Path to results JSON.")
     parser.add_argument("--output-dir", default="charts", help="Directory for generated charts.")
     return parser.parse_args()

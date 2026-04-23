@@ -6,7 +6,7 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
-from evaluate import average_scores, compute_rouge_scores
+from evaluate import average_scores, compute_summary_metrics
 from prompts import SUPPORTED_MODES, build_prompt
 
 
@@ -175,7 +175,7 @@ def run_experiment(
                 ),
                 model=model,
             )
-            scores = compute_rouge_scores(response["summary"], reference)
+            scores = compute_summary_metrics(response["summary"], reference, article)
             mode_scores[mode].append(scores)
             mode_outputs[mode] = {
                 "summary": response["summary"],

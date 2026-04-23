@@ -7,7 +7,7 @@ This file records a small qualitative prompt test performed manually in this ses
 Important limitations:
 
 - This is a manual spot check, not an automated API run.
-- The summaries below are not part of the scored ROUGE benchmark.
+- The summaries below are not part of the scored BERTScore benchmark.
 - The shell environment in this workspace does not currently expose `OPENAI_API_KEY`, so the repository's `openai` backend could not be executed programmatically.
 
 ## Article 1
@@ -69,7 +69,7 @@ Observation:
 
 ## Takeaway
 
-This small manual check suggests a different pattern from the mock ROUGE benchmark:
+This small manual check suggests a different pattern from the mock BERTScore benchmark:
 
 - the current assistant model handled all three prompt styles competently
 - `few-shot` often gave the most polished short summaries

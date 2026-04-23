@@ -3,7 +3,7 @@ from __future__ import annotations
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-from evaluate import compute_rouge_scores
+from evaluate import compute_summary_metrics
 from prompts import SUPPORTED_MODES, build_prompt
 from run_experiments import SummaryRequest, generate_summary
 
@@ -104,7 +104,7 @@ def evaluate_article(payload: EvaluateRequest) -> dict:
 
         all_results[mode] = {
             "summary": result["summary"],
-            "scores": compute_rouge_scores(result["summary"], payload.reference_summary),
+            "scores": compute_summary_metrics(result["summary"], payload.reference_summary, payload.article),
         }
 
     return {

@@ -12,7 +12,7 @@ The codebase supports:
 
 - loading a small news summarization dataset
 - generating summaries for multiple prompt modes
-- computing ROUGE-style metrics
+- computing semantic and rule-based summary metrics
 - exporting results to JSON
 - plotting comparison charts
 - calling an API to test prompt modes interactively
@@ -105,7 +105,7 @@ Request body:
 
 ### `POST /evaluate`
 
-Generates summaries for all modes on one article and returns per-mode ROUGE scores against a reference summary.
+Generates summaries for all modes on one article and returns per-mode evaluation scores against a reference summary.
 
 Request body:
 
@@ -198,11 +198,29 @@ python3 run_experiments.py \
 
 This 2-mode run makes only `48` API calls and is a good budget-friendly smoke test before running all three prompt strategies.
 
+## Evaluation Metrics
+
+The current evaluation stack combines semantic similarity and rule-based diagnostics:
+
+- `bertscore_precision`, `bertscore_recall`, `bertscore_f1`: semantic similarity against the reference summary using BERTScore
+- `novel_1gram_ratio`, `novel_2gram_ratio`: how much of the summary uses n-grams not copied directly from the source article
+- `compression_ratio`: summary token count divided by source article token count
+- `grounding_score`: rule-based check for whether numbers and capitalized entity spans in the summary also appear in the source article
+- `non_redundancy_score`: penalty for repeated summary bigrams
+- `length_score`: heuristic preference for concise summary lengths
+- `rule_based_quality`: average of `grounding_score`, `non_redundancy_score`, and `length_score`
+
+Notes:
+
+- BERTScore is the primary semantic similarity metric in this project.
+- The first BERTScore run may download a local encoder model, so evaluation is heavier than the lightweight lexical metrics used in simpler baselines.
+- You can override the encoder with `BERTSCORE_MODEL`, for example `export BERTSCORE_MODEL=roberta-large`.
+
 ## Example Research Workflow
 
 1. Pick 50 to 100 articles from a news summarization dataset.
 2. Run each article through `zero-shot`, `few-shot`, and `cot`.
-3. Compute ROUGE-1, ROUGE-2, and ROUGE-L.
+3. Compute BERTScore and the rule-based summary diagnostics.
 4. Compare average scores.
 5. Discuss whether prompting style affects summary quality.
 
